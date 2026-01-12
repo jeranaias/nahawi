@@ -1,0 +1,14 @@
+# Nahawi Backend Dependencies
+
+# Web framework
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+
+# ML dependencies
+torch>=2.0.0
+sentencepiece>=0.1.99
+
+# Utilities
+tqdm>=4.66.0

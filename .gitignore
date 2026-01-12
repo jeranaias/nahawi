@@ -36,28 +36,33 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Model checkpoints (large files)
-nahawi_ensemble/checkpoints/*/checkpoint-*/
-nahawi_ensemble/checkpoints/*/final/pytorch_model.bin
-nahawi_ensemble/checkpoints/*/final/model.safetensors
+# Model weights (large files - download separately)
+models/base/*.pt
+models/punct_aware_lora/*.pt
 *.bin
 *.safetensors
-*.pt
 *.pth
 
-# But keep training info
-!nahawi_ensemble/checkpoints/*/training_info.json
+# Keep tokenizer
+!nahawi_spm.model
 
-# Data files (large)
-synthetic_v4/
-qalb_real_data/
-*.tsv
-*.m2
+# Corpus (6GB+ - too large for git)
+corpus/
+
+# Training data (large)
+data/**/*.json
+data/*/*.json
+data/*.json
+!data/README.md
+
+# Archive (old experiments)
+archive/
 
 # Logs and temp
 *.log
 /tmp/
 *.tmp
+nul
 
 # OS
 .DS_Store
@@ -69,9 +74,90 @@ Thumbs.db
 # Results (can be regenerated)
 evaluation_results.json
 ensemble_results.json
+test_result.json
+test_100_local.json
 
-# Old/legacy files (keep repo clean)
+# Legacy directories
 camel_arabic_gec/
 models_phase*/
 phase2_*/
 training_output/
+nahawi_ensemble/
+
+# Old standalone scripts in root (keep in scripts/)
+/generate_*.py
+/train_*.py
+/eval_*.py
+/analyze_*.py
+/create_*.py
+/debug_*.py
+/filter_*.py
+/finetune_*.py
+/build_*.py
+/deduplicate_*.py
+/thorough_*.py
+/pretrain_*.py
+/test_*.py
+!/test_conjugator.py
+
+# Keep scripts in scripts/ and lora_experiment/ directories
+!scripts/**
+!lora_experiment/**
+
+# Old .md files at root (keep in docs/)
+BENCHMARK_RATIONALE.md
+CEO_VALIDATION_ROADMAP.md
+COMPETITIVE_ANALYSIS.md
+GOD_TIER_TRAINING_PLAN.md
+MODEL_VERSION_HISTORY.md
+MORPHOLOGY_TOOL_STANDARD.md
+PUNCT_PROBLEM_ANALYSIS.md
+SCIENTIFIC_EVALUATION_FRAMEWORK.md
+SCIENTIFIC_EVALUATION_RESULTS.md
+ULTIMATE_NAHAWI_PLAN.md
+ULTIMATE_NAHAWI_V2.md
+
+# Broken/corrupt directory names
+webfrontendsrccomponents/
+webfrontendpublic/
+c?nahawi*/
+
+# Node modules
+node_modules/
+web/frontend/node_modules/
+
+# Build artifacts
+web/frontend/dist/
+
+# Keep these
+!README.md
+!CLAUDE.md
+!LICENSE
+!RESULTS_SUMMARY.md
+!.gitignore
+
+# Parsed data
+parsed_roots.json
+
+# Temp hybrid postprocessor
+hybrid_postprocessor.py
+ultimate_model.py
+
+# Test outputs
+test_output*.txt
+
+# Benchmark data (large)
+benchmark/
+
+# Root data files
+roots/
+
+# LoRA experiment (keep scripts, ignore outputs)
+lora_experiment/*.pt
+lora_experiment/*.json
+
+# Evaluation scripts (keep in evaluation/)
+evaluation/*.json
+
+# Keep MODEL_GAP_ANALYSIS.md - valuable analysis
+!MODEL_GAP_ANALYSIS.md
