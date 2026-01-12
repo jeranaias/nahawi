@@ -1,0 +1,100 @@
+{
+  "version": "4.2",
+  "description": "FASIH v4.2 - Synthetic Arabic GEC Benchmark from V7 Ultimate",
+  "target": "90%+ F0.5 = Production-ready Arabic GEC",
+  "generation": {
+    "source": "V7 Ultimate Generator",
+    "features": [
+      "811 unique vocabulary words",
+      "16 FASIH error categories (100 samples each)",
+      "Includes questions, conditionals, passive voice",
+      "Proper nouns (names, cities)",
+      "Zero semantic implausibility",
+      "Proper holdout (no train/val overlap)"
+    ]
+  },
+  "categories": {
+    "orthography": {
+      "types": [
+        "taa_marbuta",
+        "hamza",
+        "alif_maqsura",
+        "alif_madda"
+      ],
+      "description": "Character-level orthographic rules"
+    },
+    "spelling": {
+      "types": [
+        "letter_dal_thal",
+        "letter_dad_za",
+        "letter_sst",
+        "common_misspelling"
+      ],
+      "description": "Phonetically similar letter confusions"
+    },
+    "morphology": {
+      "types": [
+        "gender_agreement",
+        "number_agreement",
+        "verb_form"
+      ],
+      "description": "Agreement and verb morphology"
+    },
+    "syntax": {
+      "types": [
+        "wrong_prep",
+        "definiteness"
+      ],
+      "description": "Preposition and article usage"
+    },
+    "combined": {
+      "types": [
+        "mixed_orthographic",
+        "stress_test",
+        "mixed_all"
+      ],
+      "description": "Multi-error sentences for robustness"
+    }
+  },
+  "statistics": {
+    "total_test": 1280,
+    "total_dev": 320,
+    "total": 1600,
+    "by_type_test": {
+      "number_agreement": 80,
+      "wrong_prep": 80,
+      "hamza": 80,
+      "verb_form": 80,
+      "taa_marbuta": 80,
+      "alif_maqsura": 80,
+      "mixed_orthographic": 80,
+      "mixed_all": 80,
+      "letter_sst": 80,
+      "alif_madda": 80,
+      "stress_test": 80,
+      "letter_dal_thal": 80,
+      "gender_agreement": 80,
+      "letter_dad_za": 80,
+      "definiteness": 80,
+      "common_misspelling": 80
+    },
+    "by_type_dev": {
+      "hamza": 20,
+      "number_agreement": 20,
+      "alif_madda": 20,
+      "alif_maqsura": 20,
+      "common_misspelling": 20,
+      "wrong_prep": 20,
+      "letter_dad_za": 20,
+      "taa_marbuta": 20,
+      "mixed_all": 20,
+      "verb_form": 20,
+      "letter_sst": 20,
+      "letter_dal_thal": 20,
+      "mixed_orthographic": 20,
+      "definiteness": 20,
+      "stress_test": 20,
+      "gender_agreement": 20
+    }
+  }
+}

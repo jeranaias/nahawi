@@ -1,0 +1,633 @@
+{
+  "description": "Competitive Test Set V3 - Comprehensive Professional MSA with Diverse Error Types",
+  "methodology": "100 sentences with 8 error categories reflecting real professional Arabic writing challenges",
+  "version": "3.0",
+  "test_cases": [
+    {
+      "id": 1,
+      "source": "يعتبر التعليم الجامعي من اهم المراحل التعليميه التي يمر بها الطالب في حياته الاكاديميه",
+      "target": "يعتبر التعليم الجامعي من أهم المراحل التعليمية التي يمر بها الطالب في حياته الأكاديمية",
+      "errors": [{"type": "hamza", "source": "اهم", "target": "أهم"}, {"type": "taa_marbuta", "source": "التعليميه", "target": "التعليمية"}, {"type": "hamza", "source": "الاكاديميه", "target": "الأكاديمية"}, {"type": "taa_marbuta", "source": "الاكاديميه", "target": "الأكاديمية"}]
+    },
+    {
+      "id": 2,
+      "source": "الطلاب يدرس بجد لاجتياز الامتحانات النهائيه في نهايه الفصل الدراسي",
+      "target": "الطلاب يدرسون بجد لاجتياز الامتحانات النهائية في نهاية الفصل الدراسي",
+      "errors": [{"type": "verb_conjugation", "source": "يدرس", "target": "يدرسون"}, {"type": "taa_marbuta", "source": "النهائيه", "target": "النهائية"}, {"type": "taa_marbuta", "source": "نهايه", "target": "نهاية"}]
+    },
+    {
+      "id": 3,
+      "source": "هذه الكتاب يحتوي علي معلومات قيمه عن تاريخ الحضاره العربيه الاسلاميه",
+      "target": "هذا الكتاب يحتوي على معلومات قيمة عن تاريخ الحضارة العربية الإسلامية",
+      "errors": [{"type": "gender_agreement", "source": "هذه", "target": "هذا"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "قيمه", "target": "قيمة"}, {"type": "taa_marbuta", "source": "الحضاره", "target": "الحضارة"}, {"type": "taa_marbuta", "source": "العربيه", "target": "العربية"}, {"type": "hamza", "source": "الاسلاميه", "target": "الإسلامية"}]
+    },
+    {
+      "id": 4,
+      "source": "المهندسون يعمل في مشروع ضخم لبناء جسر جديد يربط بين المدينتين",
+      "target": "المهندسون يعملون في مشروع ضخم لبناء جسر جديد يربط بين المدينتين",
+      "errors": [{"type": "verb_conjugation", "source": "يعمل", "target": "يعملون"}]
+    },
+    {
+      "id": 5,
+      "source": "اعلنت الحكومه عن خطه جديده لتطوير المنظومه الصحيه في البلاد",
+      "target": "أعلنت الحكومة عن خطة جديدة لتطوير المنظومة الصحية في البلاد",
+      "errors": [{"type": "hamza", "source": "اعلنت", "target": "أعلنت"}, {"type": "taa_marbuta", "source": "الحكومه", "target": "الحكومة"}, {"type": "taa_marbuta", "source": "خطه", "target": "خطة"}, {"type": "taa_marbuta", "source": "جديده", "target": "جديدة"}, {"type": "taa_marbuta", "source": "المنظومه", "target": "المنظومة"}, {"type": "taa_marbuta", "source": "الصحيه", "target": "الصحية"}]
+    },
+    {
+      "id": 6,
+      "source": "اكتشف العلماء علاج جديد لمرض السرطان بعد سنوات من البحث المكثف",
+      "target": "اكتشف العلماء علاجا جديدا لمرض السرطان بعد سنوات من البحث المكثف",
+      "errors": [{"type": "definiteness", "source": "علاج جديد", "target": "علاجا جديدا"}]
+    },
+    {
+      "id": 7,
+      "source": "يعتمد الامر عن الظروف الاقتصاديه والسياسيه في المنطقه",
+      "target": "يعتمد الأمر على الظروف الاقتصادية والسياسية في المنطقة",
+      "errors": [{"type": "hamza", "source": "الامر", "target": "الأمر"}, {"type": "preposition", "source": "عن", "target": "على"}, {"type": "taa_marbuta", "source": "الاقتصاديه", "target": "الاقتصادية"}, {"type": "taa_marbuta", "source": "والسياسيه", "target": "والسياسية"}, {"type": "taa_marbuta", "source": "المنطقه", "target": "المنطقة"}]
+    },
+    {
+      "id": 8,
+      "source": "البنات الثلاثه فازوا بالمسابقه الوطنيه للعلوم والرياضيات",
+      "target": "البنات الثلاث فزن بالمسابقة الوطنية للعلوم والرياضيات",
+      "errors": [{"type": "number_agreement", "source": "الثلاثه", "target": "الثلاث"}, {"type": "verb_conjugation", "source": "فازوا", "target": "فزن"}, {"type": "taa_marbuta", "source": "بالمسابقه", "target": "بالمسابقة"}, {"type": "taa_marbuta", "source": "الوطنيه", "target": "الوطنية"}]
+    },
+    {
+      "id": 9,
+      "source": "تسعي الجامعات العربيه الي تطوير برامجها الاكاديميه لتواكب التطورات العالميه",
+      "target": "تسعى الجامعات العربية إلى تطوير برامجها الأكاديمية لتواكب التطورات العالمية",
+      "errors": [{"type": "alif_maqsura", "source": "تسعي", "target": "تسعى"}, {"type": "taa_marbuta", "source": "العربيه", "target": "العربية"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "الاكاديميه", "target": "الأكاديمية"}, {"type": "taa_marbuta", "source": "العالميه", "target": "العالمية"}]
+    },
+    {
+      "id": 10,
+      "source": "هولاء الرجال طويلين وهم يعمل في شركه البناء منذ عشر سنوات",
+      "target": "هؤلاء الرجال طويلون وهم يعملون في شركة البناء منذ عشر سنوات",
+      "errors": [{"type": "hamza", "source": "هولاء", "target": "هؤلاء"}, {"type": "number_agreement", "source": "طويلين", "target": "طويلون"}, {"type": "verb_conjugation", "source": "يعمل", "target": "يعملون"}, {"type": "taa_marbuta", "source": "شركه", "target": "شركة"}]
+    },
+    {
+      "id": 11,
+      "source": "راى الباحثون ان النتائج تشير الي تحسن ملحوظ في اداء الطلاب",
+      "target": "رأى الباحثون أن النتائج تشير إلى تحسن ملحوظ في أداء الطلاب",
+      "errors": [{"type": "hamza", "source": "راى", "target": "رأى"}, {"type": "hamza", "source": "ان", "target": "أن"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "اداء", "target": "أداء"}]
+    },
+    {
+      "id": 12,
+      "source": "المعلمون يحرص علي تقديم افضل مستوي تعليمي للطلاب في المدرسه",
+      "target": "المعلمون يحرصون على تقديم أفضل مستوى تعليمي للطلاب في المدرسة",
+      "errors": [{"type": "verb_conjugation", "source": "يحرص", "target": "يحرصون"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "hamza", "source": "افضل", "target": "أفضل"}, {"type": "alif_maqsura", "source": "مستوي", "target": "مستوى"}, {"type": "taa_marbuta", "source": "المدرسه", "target": "المدرسة"}]
+    },
+    {
+      "id": 13,
+      "source": "هذا المشكله تحتاج الي حل سريع قبل ان تتفاقم الاوضاع",
+      "target": "هذه المشكلة تحتاج إلى حل سريع قبل أن تتفاقم الأوضاع",
+      "errors": [{"type": "gender_agreement", "source": "هذا", "target": "هذه"}, {"type": "taa_marbuta", "source": "المشكله", "target": "المشكلة"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "ان", "target": "أن"}, {"type": "hamza", "source": "الاوضاع", "target": "الأوضاع"}]
+    },
+    {
+      "id": 14,
+      "source": "الولد والبنت ذهب الي المدرسه معا في الصباح الباكر",
+      "target": "الولد والبنت ذهبا إلى المدرسة معا في الصباح الباكر",
+      "errors": [{"type": "verb_conjugation", "source": "ذهب", "target": "ذهبا"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "المدرسه", "target": "المدرسة"}]
+    },
+    {
+      "id": 15,
+      "source": "يجب ان نتحدث في هذا الموضوع بجديه اكبر لان الامر مهم جدا",
+      "target": "يجب أن نتحدث في هذا الموضوع بجدية أكبر لأن الأمر مهم جدا",
+      "errors": [{"type": "hamza", "source": "ان", "target": "أن"}, {"type": "taa_marbuta", "source": "بجديه", "target": "بجدية"}, {"type": "hamza", "source": "اكبر", "target": "أكبر"}, {"type": "hamza", "source": "لان", "target": "لأن"}, {"type": "hamza", "source": "الامر", "target": "الأمر"}]
+    },
+    {
+      "id": 16,
+      "source": "الاطباء يسعي الي ايجاد علاج فعال للامراض المستعصيه",
+      "target": "الأطباء يسعون إلى إيجاد علاج فعال للأمراض المستعصية",
+      "errors": [{"type": "hamza", "source": "الاطباء", "target": "الأطباء"}, {"type": "verb_conjugation", "source": "يسعي", "target": "يسعون"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "ايجاد", "target": "إيجاد"}, {"type": "hamza", "source": "للامراض", "target": "للأمراض"}, {"type": "taa_marbuta", "source": "المستعصيه", "target": "المستعصية"}]
+    },
+    {
+      "id": 17,
+      "source": "قرات كتاب مفيد عن التاريخ العربي الحديث وتاثيره في الثقافه المعاصره",
+      "target": "قرأت كتابا مفيدا عن التاريخ العربي الحديث وتأثيره في الثقافة المعاصرة",
+      "errors": [{"type": "hamza", "source": "قرات", "target": "قرأت"}, {"type": "definiteness", "source": "كتاب مفيد", "target": "كتابا مفيدا"}, {"type": "hamza", "source": "وتاثيره", "target": "وتأثيره"}, {"type": "taa_marbuta", "source": "الثقافه", "target": "الثقافة"}, {"type": "taa_marbuta", "source": "المعاصره", "target": "المعاصرة"}]
+    },
+    {
+      "id": 18,
+      "source": "هذه الرجل يعمل كمدير للشركه منذ خمسه سنوات تقريبا",
+      "target": "هذا الرجل يعمل كمدير للشركة منذ خمس سنوات تقريبا",
+      "errors": [{"type": "gender_agreement", "source": "هذه", "target": "هذا"}, {"type": "taa_marbuta", "source": "للشركه", "target": "للشركة"}, {"type": "number_agreement", "source": "خمسه", "target": "خمس"}]
+    },
+    {
+      "id": 19,
+      "source": "يعتمد علي طريقه جديده في التدريس تعتمد علي التكنولوجيا الحديثه",
+      "target": "يعتمد على طريقة جديدة في التدريس تعتمد على التكنولوجيا الحديثة",
+      "errors": [{"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "طريقه", "target": "طريقة"}, {"type": "taa_marbuta", "source": "جديده", "target": "جديدة"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "الحديثه", "target": "الحديثة"}]
+    },
+    {
+      "id": 20,
+      "source": "الموظفون يطالب بزياده في الرواتب وتحسين ظروف العمل",
+      "target": "الموظفون يطالبون بزيادة في الرواتب وتحسين ظروف العمل",
+      "errors": [{"type": "verb_conjugation", "source": "يطالب", "target": "يطالبون"}, {"type": "taa_marbuta", "source": "بزياده", "target": "بزيادة"}]
+    },
+    {
+      "id": 21,
+      "source": "رايت فيلم وثائقي عن الحياه البريه في افريقيا وكان ممتع جدا",
+      "target": "رأيت فيلما وثائقيا عن الحياة البرية في أفريقيا وكان ممتعا جدا",
+      "errors": [{"type": "hamza", "source": "رايت", "target": "رأيت"}, {"type": "definiteness", "source": "فيلم وثائقي", "target": "فيلما وثائقيا"}, {"type": "taa_marbuta", "source": "الحياه", "target": "الحياة"}, {"type": "taa_marbuta", "source": "البريه", "target": "البرية"}, {"type": "hamza", "source": "افريقيا", "target": "أفريقيا"}, {"type": "definiteness", "source": "ممتع", "target": "ممتعا"}]
+    },
+    {
+      "id": 22,
+      "source": "الرياضيون يتدرب يوميا للاستعداد للبطوله القادمه",
+      "target": "الرياضيون يتدربون يوميا للاستعداد للبطولة القادمة",
+      "errors": [{"type": "verb_conjugation", "source": "يتدرب", "target": "يتدربون"}, {"type": "taa_marbuta", "source": "للبطوله", "target": "للبطولة"}, {"type": "taa_marbuta", "source": "القادمه", "target": "القادمة"}]
+    },
+    {
+      "id": 23,
+      "source": "انتي مدعوه لحضور الحفل الذي سيقام في القاعه الكبري",
+      "target": "أنتِ مدعوة لحضور الحفل الذي سيقام في القاعة الكبرى",
+      "errors": [{"type": "hamza", "source": "انتي", "target": "أنتِ"}, {"type": "taa_marbuta", "source": "مدعوه", "target": "مدعوة"}, {"type": "taa_marbuta", "source": "القاعه", "target": "القاعة"}, {"type": "alif_maqsura", "source": "الكبري", "target": "الكبرى"}]
+    },
+    {
+      "id": 24,
+      "source": "النساء يحتاج الي دعم اكبر في مجال العمل والتعليم",
+      "target": "النساء يحتجن إلى دعم أكبر في مجال العمل والتعليم",
+      "errors": [{"type": "verb_conjugation", "source": "يحتاج", "target": "يحتجن"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "اكبر", "target": "أكبر"}]
+    },
+    {
+      "id": 25,
+      "source": "ساهمت المنظمه في تقديم مساعدات انسانيه للمتضررين من الكارثه",
+      "target": "ساهمت المنظمة في تقديم مساعدات إنسانية للمتضررين من الكارثة",
+      "errors": [{"type": "taa_marbuta", "source": "المنظمه", "target": "المنظمة"}, {"type": "hamza", "source": "انسانيه", "target": "إنسانية"}, {"type": "taa_marbuta", "source": "الكارثه", "target": "الكارثة"}]
+    },
+    {
+      "id": 26,
+      "source": "هذا الفتاه ذكيه جدا وتتفوق علي زملائها في الدراسه",
+      "target": "هذه الفتاة ذكية جدا وتتفوق على زملائها في الدراسة",
+      "errors": [{"type": "gender_agreement", "source": "هذا", "target": "هذه"}, {"type": "taa_marbuta", "source": "الفتاه", "target": "الفتاة"}, {"type": "taa_marbuta", "source": "ذكيه", "target": "ذكية"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "الدراسه", "target": "الدراسة"}]
+    },
+    {
+      "id": 27,
+      "source": "الصحفيون يسعي الي الحصول علي المعلومات من مصادر موثوقه",
+      "target": "الصحفيون يسعون إلى الحصول على المعلومات من مصادر موثوقة",
+      "errors": [{"type": "verb_conjugation", "source": "يسعي", "target": "يسعون"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "موثوقه", "target": "موثوقة"}]
+    },
+    {
+      "id": 28,
+      "source": "بناء علي ذلك سنتخذ قرار مناسب في الاجتماع القادم",
+      "target": "بناء على ذلك سنتخذ قرارا مناسبا في الاجتماع القادم",
+      "errors": [{"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "definiteness", "source": "قرار مناسب", "target": "قرارا مناسبا"}]
+    },
+    {
+      "id": 29,
+      "source": "يجب ان يتحلي الموظفين بالصبر والامانه في العمل",
+      "target": "يجب أن يتحلى الموظفون بالصبر والأمانة في العمل",
+      "errors": [{"type": "hamza", "source": "ان", "target": "أن"}, {"type": "alif_maqsura", "source": "يتحلي", "target": "يتحلى"}, {"type": "number_agreement", "source": "الموظفين", "target": "الموظفون"}, {"type": "hamza", "source": "والامانه", "target": "والأمانة"}, {"type": "taa_marbuta", "source": "والامانه", "target": "والأمانة"}]
+    },
+    {
+      "id": 30,
+      "source": "الاولاد الثلاثه ذهبوا الي الملعب للعب كره القدم",
+      "target": "الأولاد الثلاثة ذهبوا إلى الملعب للعب كرة القدم",
+      "errors": [{"type": "hamza", "source": "الاولاد", "target": "الأولاد"}, {"type": "taa_marbuta", "source": "الثلاثه", "target": "الثلاثة"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "كره", "target": "كرة"}]
+    },
+    {
+      "id": 31,
+      "source": "المديرون يناقش خطه جديده لتطوير الشركه وزياده الانتاج",
+      "target": "المديرون يناقشون خطة جديدة لتطوير الشركة وزيادة الإنتاج",
+      "errors": [{"type": "verb_conjugation", "source": "يناقش", "target": "يناقشون"}, {"type": "taa_marbuta", "source": "خطه", "target": "خطة"}, {"type": "taa_marbuta", "source": "جديده", "target": "جديدة"}, {"type": "taa_marbuta", "source": "الشركه", "target": "الشركة"}, {"type": "taa_marbuta", "source": "وزياده", "target": "وزيادة"}, {"type": "hamza", "source": "الانتاج", "target": "الإنتاج"}]
+    },
+    {
+      "id": 32,
+      "source": "اخذت قرار صعب ولكنه كان ضروري لمصلحه العائله",
+      "target": "اتخذت قرارا صعبا ولكنه كان ضروريا لمصلحة العائلة",
+      "errors": [{"type": "spelling", "source": "اخذت", "target": "اتخذت"}, {"type": "definiteness", "source": "قرار صعب", "target": "قرارا صعبا"}, {"type": "definiteness", "source": "ضروري", "target": "ضروريا"}, {"type": "taa_marbuta", "source": "لمصلحه", "target": "لمصلحة"}, {"type": "taa_marbuta", "source": "العائله", "target": "العائلة"}]
+    },
+    {
+      "id": 33,
+      "source": "هذه البيت كبير جدا ويحتوي علي غرف كثيره",
+      "target": "هذا البيت كبير جدا ويحتوي على غرف كثيرة",
+      "errors": [{"type": "gender_agreement", "source": "هذه", "target": "هذا"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "كثيره", "target": "كثيرة"}]
+    },
+    {
+      "id": 34,
+      "source": "العاملون يرفض العمل في ظروف غير امنه",
+      "target": "العاملون يرفضون العمل في ظروف غير آمنة",
+      "errors": [{"type": "verb_conjugation", "source": "يرفض", "target": "يرفضون"}, {"type": "hamza", "source": "امنه", "target": "آمنة"}, {"type": "taa_marbuta", "source": "امنه", "target": "آمنة"}]
+    },
+    {
+      "id": 35,
+      "source": "سافرت الي مصر ثم الي لبنان خلال اجازه الصيف الماضيه",
+      "target": "سافرت إلى مصر ثم إلى لبنان خلال إجازة الصيف الماضية",
+      "errors": [{"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "اجازه", "target": "إجازة"}, {"type": "taa_marbuta", "source": "الماضيه", "target": "الماضية"}]
+    },
+    {
+      "id": 36,
+      "source": "الفريق يلعب مباراه مصيريه غدا ضد الفريق المنافس",
+      "target": "الفريق يلعب مباراة مصيرية غدا ضد الفريق المنافس",
+      "errors": [{"type": "taa_marbuta", "source": "مباراه", "target": "مباراة"}, {"type": "taa_marbuta", "source": "مصيريه", "target": "مصيرية"}]
+    },
+    {
+      "id": 37,
+      "source": "اصبحت التجاره الالكترونيه ضروره في العصر الحديث",
+      "target": "أصبحت التجارة الإلكترونية ضرورة في العصر الحديث",
+      "errors": [{"type": "hamza", "source": "اصبحت", "target": "أصبحت"}, {"type": "taa_marbuta", "source": "التجاره", "target": "التجارة"}, {"type": "hamza", "source": "الالكترونيه", "target": "الإلكترونية"}, {"type": "taa_marbuta", "source": "الالكترونيه", "target": "الإلكترونية"}, {"type": "taa_marbuta", "source": "ضروره", "target": "ضرورة"}]
+    },
+    {
+      "id": 38,
+      "source": "يهتم في تطوير مهاراته اللغويه والتقنيه",
+      "target": "يهتم بتطوير مهاراته اللغوية والتقنية",
+      "errors": [{"type": "preposition", "source": "في", "target": "بـ"}, {"type": "taa_marbuta", "source": "اللغويه", "target": "اللغوية"}, {"type": "taa_marbuta", "source": "والتقنيه", "target": "والتقنية"}]
+    },
+    {
+      "id": 39,
+      "source": "الطالبات يدرسن بجد واجتهاد للحصول علي درجات عاليه",
+      "target": "الطالبات يدرسن بجد واجتهاد للحصول على درجات عالية",
+      "errors": [{"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "عاليه", "target": "عالية"}]
+    },
+    {
+      "id": 40,
+      "source": "ارسلت رساله الي المدير لطلب اجتماع عاجل",
+      "target": "أرسلت رسالة إلى المدير لطلب اجتماع عاجل",
+      "errors": [{"type": "hamza", "source": "ارسلت", "target": "أرسلت"}, {"type": "taa_marbuta", "source": "رساله", "target": "رسالة"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}]
+    },
+    {
+      "id": 41,
+      "source": "المسؤولون يجتمع اسبوعيا لمناقشه القضايا الهامه",
+      "target": "المسؤولون يجتمعون أسبوعيا لمناقشة القضايا الهامة",
+      "errors": [{"type": "verb_conjugation", "source": "يجتمع", "target": "يجتمعون"}, {"type": "hamza", "source": "اسبوعيا", "target": "أسبوعيا"}, {"type": "taa_marbuta", "source": "لمناقشه", "target": "لمناقشة"}, {"type": "taa_marbuta", "source": "الهامه", "target": "الهامة"}]
+    },
+    {
+      "id": 42,
+      "source": "هذا القضيه معقده وتحتاج الي دراسه متانيه",
+      "target": "هذه القضية معقدة وتحتاج إلى دراسة متأنية",
+      "errors": [{"type": "gender_agreement", "source": "هذا", "target": "هذه"}, {"type": "taa_marbuta", "source": "القضيه", "target": "القضية"}, {"type": "taa_marbuta", "source": "معقده", "target": "معقدة"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "دراسه", "target": "دراسة"}, {"type": "hamza", "source": "متانيه", "target": "متأنية"}]
+    },
+    {
+      "id": 43,
+      "source": "الاقتصاد يعتمد علي قطاعات متعدده منها الصناعه والزراعه",
+      "target": "الاقتصاد يعتمد على قطاعات متعددة منها الصناعة والزراعة",
+      "errors": [{"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "متعدده", "target": "متعددة"}, {"type": "taa_marbuta", "source": "الصناعه", "target": "الصناعة"}, {"type": "taa_marbuta", "source": "والزراعه", "target": "والزراعة"}]
+    },
+    {
+      "id": 44,
+      "source": "المحامون يدافع عن حقوق موكليهم باخلاص وتفاني",
+      "target": "المحامون يدافعون عن حقوق موكليهم بإخلاص وتفان",
+      "errors": [{"type": "verb_conjugation", "source": "يدافع", "target": "يدافعون"}, {"type": "hamza", "source": "باخلاص", "target": "بإخلاص"}, {"type": "spelling", "source": "وتفاني", "target": "وتفان"}]
+    },
+    {
+      "id": 45,
+      "source": "حصلت علي شهاده في اداره الاعمال من جامعه مرموقه",
+      "target": "حصلت على شهادة في إدارة الأعمال من جامعة مرموقة",
+      "errors": [{"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "شهاده", "target": "شهادة"}, {"type": "hamza", "source": "اداره", "target": "إدارة"}, {"type": "taa_marbuta", "source": "اداره", "target": "إدارة"}, {"type": "hamza", "source": "الاعمال", "target": "الأعمال"}, {"type": "taa_marbuta", "source": "جامعه", "target": "جامعة"}, {"type": "taa_marbuta", "source": "مرموقه", "target": "مرموقة"}]
+    },
+    {
+      "id": 46,
+      "source": "الباحثون يركز علي دراسه تاثير التكنولوجيا علي المجتمع",
+      "target": "الباحثون يركزون على دراسة تأثير التكنولوجيا على المجتمع",
+      "errors": [{"type": "verb_conjugation", "source": "يركز", "target": "يركزون"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "دراسه", "target": "دراسة"}, {"type": "hamza", "source": "تاثير", "target": "تأثير"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}]
+    },
+    {
+      "id": 47,
+      "source": "متي ستذهب الي السفاره للحصول علي التاشيره",
+      "target": "متى ستذهب إلى السفارة للحصول على التأشيرة",
+      "errors": [{"type": "alif_maqsura", "source": "متي", "target": "متى"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "السفاره", "target": "السفارة"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "hamza", "source": "التاشيره", "target": "التأشيرة"}, {"type": "taa_marbuta", "source": "التاشيره", "target": "التأشيرة"}]
+    },
+    {
+      "id": 48,
+      "source": "الممرضات يعتني بالمرضي باهتمام ورعايه فائقه",
+      "target": "الممرضات يعتنين بالمرضى باهتمام ورعاية فائقة",
+      "errors": [{"type": "verb_conjugation", "source": "يعتني", "target": "يعتنين"}, {"type": "alif_maqsura", "source": "بالمرضي", "target": "بالمرضى"}, {"type": "taa_marbuta", "source": "ورعايه", "target": "ورعاية"}, {"type": "taa_marbuta", "source": "فائقه", "target": "فائقة"}]
+    },
+    {
+      "id": 49,
+      "source": "يفكر في الموضوع بشكل مختلف عن زملاءه",
+      "target": "يفكر في الموضوع بشكل مختلف عن زملائه",
+      "errors": [{"type": "spelling", "source": "زملاءه", "target": "زملائه"}]
+    },
+    {
+      "id": 50,
+      "source": "المبني الجديد سيكون جاهز خلال ثلاثه اشهر تقريبا",
+      "target": "المبنى الجديد سيكون جاهزا خلال ثلاثة أشهر تقريبا",
+      "errors": [{"type": "alif_maqsura", "source": "المبني", "target": "المبنى"}, {"type": "definiteness", "source": "جاهز", "target": "جاهزا"}, {"type": "taa_marbuta", "source": "ثلاثه", "target": "ثلاثة"}, {"type": "hamza", "source": "اشهر", "target": "أشهر"}]
+    },
+    {
+      "id": 51,
+      "source": "السفراء يمثل بلادهم في المحافل الدوليه باقتدار",
+      "target": "السفراء يمثلون بلادهم في المحافل الدولية باقتدار",
+      "errors": [{"type": "verb_conjugation", "source": "يمثل", "target": "يمثلون"}, {"type": "taa_marbuta", "source": "الدوليه", "target": "الدولية"}]
+    },
+    {
+      "id": 52,
+      "source": "هذه المشروع سيوفر فرص عمل كثيره للشباب العاطل",
+      "target": "هذا المشروع سيوفر فرص عمل كثيرة للشباب العاطل",
+      "errors": [{"type": "gender_agreement", "source": "هذه", "target": "هذا"}, {"type": "taa_marbuta", "source": "كثيره", "target": "كثيرة"}]
+    },
+    {
+      "id": 53,
+      "source": "اتمني لك التوفيق في حياتك المهنيه والشخصيه",
+      "target": "أتمنى لك التوفيق في حياتك المهنية والشخصية",
+      "errors": [{"type": "hamza", "source": "اتمني", "target": "أتمنى"}, {"type": "alif_maqsura", "source": "اتمني", "target": "أتمنى"}, {"type": "taa_marbuta", "source": "المهنيه", "target": "المهنية"}, {"type": "taa_marbuta", "source": "والشخصيه", "target": "والشخصية"}]
+    },
+    {
+      "id": 54,
+      "source": "الخبراء يتوقع ارتفاع في اسعار النفط خلال الفتره القادمه",
+      "target": "الخبراء يتوقعون ارتفاعا في أسعار النفط خلال الفترة القادمة",
+      "errors": [{"type": "verb_conjugation", "source": "يتوقع", "target": "يتوقعون"}, {"type": "definiteness", "source": "ارتفاع", "target": "ارتفاعا"}, {"type": "hamza", "source": "اسعار", "target": "أسعار"}, {"type": "taa_marbuta", "source": "الفتره", "target": "الفترة"}, {"type": "taa_marbuta", "source": "القادمه", "target": "القادمة"}]
+    },
+    {
+      "id": 55,
+      "source": "ذهبنا الي المتحف لمشاهده الاثار التاريخيه القديمه",
+      "target": "ذهبنا إلى المتحف لمشاهدة الآثار التاريخية القديمة",
+      "errors": [{"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "لمشاهده", "target": "لمشاهدة"}, {"type": "hamza", "source": "الاثار", "target": "الآثار"}, {"type": "taa_marbuta", "source": "التاريخيه", "target": "التاريخية"}, {"type": "taa_marbuta", "source": "القديمه", "target": "القديمة"}]
+    },
+    {
+      "id": 56,
+      "source": "الاساتذه يشرح الدرس بطريقه مبسطه وواضحه",
+      "target": "الأساتذة يشرحون الدرس بطريقة مبسطة وواضحة",
+      "errors": [{"type": "hamza", "source": "الاساتذه", "target": "الأساتذة"}, {"type": "taa_marbuta", "source": "الاساتذه", "target": "الأساتذة"}, {"type": "verb_conjugation", "source": "يشرح", "target": "يشرحون"}, {"type": "taa_marbuta", "source": "بطريقه", "target": "بطريقة"}, {"type": "taa_marbuta", "source": "مبسطه", "target": "مبسطة"}, {"type": "taa_marbuta", "source": "وواضحه", "target": "وواضحة"}]
+    },
+    {
+      "id": 57,
+      "source": "تفكر في السفر الي اوروبا خلال اجازه الصيف",
+      "target": "تفكر في السفر إلى أوروبا خلال إجازة الصيف",
+      "errors": [{"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "اوروبا", "target": "أوروبا"}, {"type": "hamza", "source": "اجازه", "target": "إجازة"}, {"type": "taa_marbuta", "source": "اجازه", "target": "إجازة"}]
+    },
+    {
+      "id": 58,
+      "source": "العمال يستحق رواتب افضل وظروف عمل احسن",
+      "target": "العمال يستحقون رواتب أفضل وظروف عمل أحسن",
+      "errors": [{"type": "verb_conjugation", "source": "يستحق", "target": "يستحقون"}, {"type": "hamza", "source": "افضل", "target": "أفضل"}, {"type": "hamza", "source": "احسن", "target": "أحسن"}]
+    },
+    {
+      "id": 59,
+      "source": "لا اعرف الاجابه الصحيحه علي هذا السؤال المعقد",
+      "target": "لا أعرف الإجابة الصحيحة على هذا السؤال المعقد",
+      "errors": [{"type": "hamza", "source": "اعرف", "target": "أعرف"}, {"type": "hamza", "source": "الاجابه", "target": "الإجابة"}, {"type": "taa_marbuta", "source": "الاجابه", "target": "الإجابة"}, {"type": "taa_marbuta", "source": "الصحيحه", "target": "الصحيحة"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}]
+    },
+    {
+      "id": 60,
+      "source": "الزوار يتجول في المعرض ويعجبون بالاعمال الفنيه",
+      "target": "الزوار يتجولون في المعرض ويعجبون بالأعمال الفنية",
+      "errors": [{"type": "verb_conjugation", "source": "يتجول", "target": "يتجولون"}, {"type": "hamza", "source": "بالاعمال", "target": "بالأعمال"}, {"type": "taa_marbuta", "source": "الفنيه", "target": "الفنية"}]
+    },
+    {
+      "id": 61,
+      "source": "هذه الولد يذهب الي المدرسه كل يوم مشيا علي الاقدام",
+      "target": "هذا الولد يذهب إلى المدرسة كل يوم مشيا على الأقدام",
+      "errors": [{"type": "gender_agreement", "source": "هذه", "target": "هذا"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "المدرسه", "target": "المدرسة"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "hamza", "source": "الاقدام", "target": "الأقدام"}]
+    },
+    {
+      "id": 62,
+      "source": "الفنانون يعرض اعمالهم في معرض دولي كبير",
+      "target": "الفنانون يعرضون أعمالهم في معرض دولي كبير",
+      "errors": [{"type": "verb_conjugation", "source": "يعرض", "target": "يعرضون"}, {"type": "hamza", "source": "اعمالهم", "target": "أعمالهم"}]
+    },
+    {
+      "id": 63,
+      "source": "حتي الان لم نتلقي ردا علي طلبنا المقدم للاداره",
+      "target": "حتى الآن لم نتلق ردا على طلبنا المقدم للإدارة",
+      "errors": [{"type": "alif_maqsura", "source": "حتي", "target": "حتى"}, {"type": "hamza", "source": "الان", "target": "الآن"}, {"type": "spelling", "source": "نتلقي", "target": "نتلق"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "hamza", "source": "للاداره", "target": "للإدارة"}, {"type": "taa_marbuta", "source": "للاداره", "target": "للإدارة"}]
+    },
+    {
+      "id": 64,
+      "source": "المتطوعون يساهم في مساعده المحتاجين والفقراء",
+      "target": "المتطوعون يساهمون في مساعدة المحتاجين والفقراء",
+      "errors": [{"type": "verb_conjugation", "source": "يساهم", "target": "يساهمون"}, {"type": "taa_marbuta", "source": "مساعده", "target": "مساعدة"}]
+    },
+    {
+      "id": 65,
+      "source": "الجامعه مغلقه اليوم بسبب اضراب الموظفين",
+      "target": "الجامعة مغلقة اليوم بسبب إضراب الموظفين",
+      "errors": [{"type": "taa_marbuta", "source": "الجامعه", "target": "الجامعة"}, {"type": "taa_marbuta", "source": "مغلقه", "target": "مغلقة"}, {"type": "hamza", "source": "اضراب", "target": "إضراب"}]
+    },
+    {
+      "id": 66,
+      "source": "السياسيون يتحدث عن اهميه الاصلاحات الاقتصاديه",
+      "target": "السياسيون يتحدثون عن أهمية الإصلاحات الاقتصادية",
+      "errors": [{"type": "verb_conjugation", "source": "يتحدث", "target": "يتحدثون"}, {"type": "hamza", "source": "اهميه", "target": "أهمية"}, {"type": "taa_marbuta", "source": "اهميه", "target": "أهمية"}, {"type": "hamza", "source": "الاصلاحات", "target": "الإصلاحات"}, {"type": "taa_marbuta", "source": "الاقتصاديه", "target": "الاقتصادية"}]
+    },
+    {
+      "id": 67,
+      "source": "اشتريت سياره جديده بسعر مناسب من الوكاله",
+      "target": "اشتريت سيارة جديدة بسعر مناسب من الوكالة",
+      "errors": [{"type": "taa_marbuta", "source": "سياره", "target": "سيارة"}, {"type": "taa_marbuta", "source": "جديده", "target": "جديدة"}, {"type": "taa_marbuta", "source": "الوكاله", "target": "الوكالة"}]
+    },
+    {
+      "id": 68,
+      "source": "اللاعبون يتنافس علي الفوز بالبطوله هذا الموسم",
+      "target": "اللاعبون يتنافسون على الفوز بالبطولة هذا الموسم",
+      "errors": [{"type": "verb_conjugation", "source": "يتنافس", "target": "يتنافسون"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "taa_marbuta", "source": "بالبطوله", "target": "بالبطولة"}]
+    },
+    {
+      "id": 69,
+      "source": "يجب ان تتعامل مع الازمه بحكمه وصبر",
+      "target": "يجب أن تتعامل مع الأزمة بحكمة وصبر",
+      "errors": [{"type": "hamza", "source": "ان", "target": "أن"}, {"type": "hamza", "source": "الازمه", "target": "الأزمة"}, {"type": "taa_marbuta", "source": "الازمه", "target": "الأزمة"}, {"type": "taa_marbuta", "source": "بحكمه", "target": "بحكمة"}]
+    },
+    {
+      "id": 70,
+      "source": "المواطنون يطالب بتحسين الخدمات العامه في المدينه",
+      "target": "المواطنون يطالبون بتحسين الخدمات العامة في المدينة",
+      "errors": [{"type": "verb_conjugation", "source": "يطالب", "target": "يطالبون"}, {"type": "taa_marbuta", "source": "العامه", "target": "العامة"}, {"type": "taa_marbuta", "source": "المدينه", "target": "المدينة"}]
+    },
+    {
+      "id": 71,
+      "source": "هذا السياره قديمه وتحتاج الي صيانه شامله",
+      "target": "هذه السيارة قديمة وتحتاج إلى صيانة شاملة",
+      "errors": [{"type": "gender_agreement", "source": "هذا", "target": "هذه"}, {"type": "taa_marbuta", "source": "السياره", "target": "السيارة"}, {"type": "taa_marbuta", "source": "قديمه", "target": "قديمة"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "صيانه", "target": "صيانة"}, {"type": "taa_marbuta", "source": "شامله", "target": "شاملة"}]
+    },
+    {
+      "id": 72,
+      "source": "الكتاب يتحدثون عن تجاربهم الادبيه والابداعيه",
+      "target": "الكتاب يتحدثون عن تجاربهم الأدبية والإبداعية",
+      "errors": [{"type": "hamza", "source": "الادبيه", "target": "الأدبية"}, {"type": "taa_marbuta", "source": "الادبيه", "target": "الأدبية"}, {"type": "hamza", "source": "والابداعيه", "target": "والإبداعية"}, {"type": "taa_marbuta", "source": "والابداعيه", "target": "والإبداعية"}]
+    },
+    {
+      "id": 73,
+      "source": "يعمل بناء علي تعليمات المدير بشكل دقيق",
+      "target": "يعمل بناء على تعليمات المدير بشكل دقيق",
+      "errors": [{"type": "alif_maqsura", "source": "علي", "target": "على"}]
+    },
+    {
+      "id": 74,
+      "source": "المعارضون يرفض القرارات الحكوميه الجديده",
+      "target": "المعارضون يرفضون القرارات الحكومية الجديدة",
+      "errors": [{"type": "verb_conjugation", "source": "يرفض", "target": "يرفضون"}, {"type": "taa_marbuta", "source": "الحكوميه", "target": "الحكومية"}, {"type": "taa_marbuta", "source": "الجديده", "target": "الجديدة"}]
+    },
+    {
+      "id": 75,
+      "source": "الطائره وصلت متاخره بسبب سوء الاحوال الجويه",
+      "target": "الطائرة وصلت متأخرة بسبب سوء الأحوال الجوية",
+      "errors": [{"type": "taa_marbuta", "source": "الطائره", "target": "الطائرة"}, {"type": "hamza", "source": "متاخره", "target": "متأخرة"}, {"type": "taa_marbuta", "source": "متاخره", "target": "متأخرة"}, {"type": "hamza", "source": "الاحوال", "target": "الأحوال"}, {"type": "taa_marbuta", "source": "الجويه", "target": "الجوية"}]
+    },
+    {
+      "id": 76,
+      "source": "المنتخب يلعب مباراه حاسمه في التصفيات القاريه",
+      "target": "المنتخب يلعب مباراة حاسمة في التصفيات القارية",
+      "errors": [{"type": "taa_marbuta", "source": "مباراه", "target": "مباراة"}, {"type": "taa_marbuta", "source": "حاسمه", "target": "حاسمة"}, {"type": "taa_marbuta", "source": "القاريه", "target": "القارية"}]
+    },
+    {
+      "id": 77,
+      "source": "النقاد يشيد باداء الممثلين في الفيلم الجديد",
+      "target": "النقاد يشيدون بأداء الممثلين في الفيلم الجديد",
+      "errors": [{"type": "verb_conjugation", "source": "يشيد", "target": "يشيدون"}, {"type": "hamza", "source": "باداء", "target": "بأداء"}]
+    },
+    {
+      "id": 78,
+      "source": "يفتقر الي الخبره اللازمه لهذا المنصب الحساس",
+      "target": "يفتقر إلى الخبرة اللازمة لهذا المنصب الحساس",
+      "errors": [{"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "taa_marbuta", "source": "الخبره", "target": "الخبرة"}, {"type": "taa_marbuta", "source": "اللازمه", "target": "اللازمة"}]
+    },
+    {
+      "id": 79,
+      "source": "المزارعون يواجه صعوبات كبيره بسبب الجفاف هذا العام",
+      "target": "المزارعون يواجهون صعوبات كبيرة بسبب الجفاف هذا العام",
+      "errors": [{"type": "verb_conjugation", "source": "يواجه", "target": "يواجهون"}, {"type": "taa_marbuta", "source": "كبيره", "target": "كبيرة"}]
+    },
+    {
+      "id": 80,
+      "source": "القهوه جاهزه ويمكنك شربها الان",
+      "target": "القهوة جاهزة ويمكنك شربها الآن",
+      "errors": [{"type": "taa_marbuta", "source": "القهوه", "target": "القهوة"}, {"type": "taa_marbuta", "source": "جاهزه", "target": "جاهزة"}, {"type": "hamza", "source": "الان", "target": "الآن"}]
+    },
+    {
+      "id": 81,
+      "source": "الصحفيون ينقل الاخبار من مناطق الصراع بشجاعه",
+      "target": "الصحفيون ينقلون الأخبار من مناطق الصراع بشجاعة",
+      "errors": [{"type": "verb_conjugation", "source": "ينقل", "target": "ينقلون"}, {"type": "hamza", "source": "الاخبار", "target": "الأخبار"}, {"type": "taa_marbuta", "source": "بشجاعه", "target": "بشجاعة"}]
+    },
+    {
+      "id": 82,
+      "source": "هذا النظريه تحتاج الي اثبات علمي دقيق",
+      "target": "هذه النظرية تحتاج إلى إثبات علمي دقيق",
+      "errors": [{"type": "gender_agreement", "source": "هذا", "target": "هذه"}, {"type": "taa_marbuta", "source": "النظريه", "target": "النظرية"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}, {"type": "hamza", "source": "اثبات", "target": "إثبات"}]
+    },
+    {
+      "id": 83,
+      "source": "المدربون يعد الفريق للمباريات القادمه بجديه",
+      "target": "المدربون يعدون الفريق للمباريات القادمة بجدية",
+      "errors": [{"type": "verb_conjugation", "source": "يعد", "target": "يعدون"}, {"type": "taa_marbuta", "source": "القادمه", "target": "القادمة"}, {"type": "taa_marbuta", "source": "بجديه", "target": "بجدية"}]
+    },
+    {
+      "id": 84,
+      "source": "الاخبار سيئه اليوم بسبب الوضع الاقتصادي المتردي",
+      "target": "الأخبار سيئة اليوم بسبب الوضع الاقتصادي المتردي",
+      "errors": [{"type": "hamza", "source": "الاخبار", "target": "الأخبار"}, {"type": "taa_marbuta", "source": "سيئه", "target": "سيئة"}]
+    },
+    {
+      "id": 85,
+      "source": "المحققون يبحث عن ادله جديده في القضيه المعقده",
+      "target": "المحققون يبحثون عن أدلة جديدة في القضية المعقدة",
+      "errors": [{"type": "verb_conjugation", "source": "يبحث", "target": "يبحثون"}, {"type": "hamza", "source": "ادله", "target": "أدلة"}, {"type": "taa_marbuta", "source": "ادله", "target": "أدلة"}, {"type": "taa_marbuta", "source": "جديده", "target": "جديدة"}, {"type": "taa_marbuta", "source": "القضيه", "target": "القضية"}, {"type": "taa_marbuta", "source": "المعقده", "target": "المعقدة"}]
+    },
+    {
+      "id": 86,
+      "source": "تسهم الرياضه في تعزيز الصحه الجسديه والنفسيه",
+      "target": "تسهم الرياضة في تعزيز الصحة الجسدية والنفسية",
+      "errors": [{"type": "taa_marbuta", "source": "الرياضه", "target": "الرياضة"}, {"type": "taa_marbuta", "source": "الصحه", "target": "الصحة"}, {"type": "taa_marbuta", "source": "الجسديه", "target": "الجسدية"}, {"type": "taa_marbuta", "source": "والنفسيه", "target": "والنفسية"}]
+    },
+    {
+      "id": 87,
+      "source": "الممثلون يؤدي ادوارهم باحترافيه عاليه",
+      "target": "الممثلون يؤدون أدوارهم باحترافية عالية",
+      "errors": [{"type": "verb_conjugation", "source": "يؤدي", "target": "يؤدون"}, {"type": "hamza", "source": "ادوارهم", "target": "أدوارهم"}, {"type": "taa_marbuta", "source": "باحترافيه", "target": "باحترافية"}, {"type": "taa_marbuta", "source": "عاليه", "target": "عالية"}]
+    },
+    {
+      "id": 88,
+      "source": "المباراه انتهت بالتعادل بين الفريقين المتنافسين",
+      "target": "المباراة انتهت بالتعادل بين الفريقين المتنافسين",
+      "errors": [{"type": "taa_marbuta", "source": "المباراه", "target": "المباراة"}]
+    },
+    {
+      "id": 89,
+      "source": "المستثمرون يبحث عن فرص استثماريه جديده في المنطقه",
+      "target": "المستثمرون يبحثون عن فرص استثمارية جديدة في المنطقة",
+      "errors": [{"type": "verb_conjugation", "source": "يبحث", "target": "يبحثون"}, {"type": "taa_marbuta", "source": "استثماريه", "target": "استثمارية"}, {"type": "taa_marbuta", "source": "جديده", "target": "جديدة"}, {"type": "taa_marbuta", "source": "المنطقه", "target": "المنطقة"}]
+    },
+    {
+      "id": 90,
+      "source": "يجب ان نتعاون معا لتحقيق اهدافنا المشتركه",
+      "target": "يجب أن نتعاون معا لتحقيق أهدافنا المشتركة",
+      "errors": [{"type": "hamza", "source": "ان", "target": "أن"}, {"type": "hamza", "source": "اهدافنا", "target": "أهدافنا"}, {"type": "taa_marbuta", "source": "المشتركه", "target": "المشتركة"}]
+    },
+    {
+      "id": 91,
+      "source": "الشرطه وصلت بسرعه الي مكان الحادث",
+      "target": "الشرطة وصلت بسرعة إلى مكان الحادث",
+      "errors": [{"type": "taa_marbuta", "source": "الشرطه", "target": "الشرطة"}, {"type": "taa_marbuta", "source": "بسرعه", "target": "بسرعة"}, {"type": "alif_maqsura", "source": "الي", "target": "إلى"}]
+    },
+    {
+      "id": 92,
+      "source": "القضاه يصدر احكام عادله بناء علي الادله المقدمه",
+      "target": "القضاة يصدرون أحكاما عادلة بناء على الأدلة المقدمة",
+      "errors": [{"type": "taa_marbuta", "source": "القضاه", "target": "القضاة"}, {"type": "verb_conjugation", "source": "يصدر", "target": "يصدرون"}, {"type": "hamza", "source": "احكام", "target": "أحكاما"}, {"type": "definiteness", "source": "احكام عادله", "target": "أحكاما عادلة"}, {"type": "alif_maqsura", "source": "علي", "target": "على"}, {"type": "hamza", "source": "الادله", "target": "الأدلة"}, {"type": "taa_marbuta", "source": "المقدمه", "target": "المقدمة"}]
+    },
+    {
+      "id": 93,
+      "source": "هذا الفرصه لن تتكرر وعليك استغلالها جيدا",
+      "target": "هذه الفرصة لن تتكرر وعليك استغلالها جيدا",
+      "errors": [{"type": "gender_agreement", "source": "هذا", "target": "هذه"}, {"type": "taa_marbuta", "source": "الفرصه", "target": "الفرصة"}]
+    },
+    {
+      "id": 94,
+      "source": "الاكاديميون ينشر ابحاثهم في مجلات علميه محكمه",
+      "target": "الأكاديميون ينشرون أبحاثهم في مجلات علمية محكمة",
+      "errors": [{"type": "hamza", "source": "الاكاديميون", "target": "الأكاديميون"}, {"type": "verb_conjugation", "source": "ينشر", "target": "ينشرون"}, {"type": "hamza", "source": "ابحاثهم", "target": "أبحاثهم"}, {"type": "taa_marbuta", "source": "علميه", "target": "علمية"}, {"type": "taa_marbuta", "source": "محكمه", "target": "محكمة"}]
+    },
+    {
+      "id": 95,
+      "source": "الحديقه جميله في الربيع عندما تتفتح الازهار",
+      "target": "الحديقة جميلة في الربيع عندما تتفتح الأزهار",
+      "errors": [{"type": "taa_marbuta", "source": "الحديقه", "target": "الحديقة"}, {"type": "taa_marbuta", "source": "جميله", "target": "جميلة"}, {"type": "hamza", "source": "الازهار", "target": "الأزهار"}]
+    },
+    {
+      "id": 96,
+      "source": "المهاجرون يواجه تحديات كبيره في الاندماج بالمجتمع الجديد",
+      "target": "المهاجرون يواجهون تحديات كبيرة في الاندماج بالمجتمع الجديد",
+      "errors": [{"type": "verb_conjugation", "source": "يواجه", "target": "يواجهون"}, {"type": "taa_marbuta", "source": "كبيره", "target": "كبيرة"}]
+    },
+    {
+      "id": 97,
+      "source": "المكتبه تغلق في العاشره مساء كل يوم",
+      "target": "المكتبة تغلق في العاشرة مساء كل يوم",
+      "errors": [{"type": "taa_marbuta", "source": "المكتبه", "target": "المكتبة"}, {"type": "taa_marbuta", "source": "العاشره", "target": "العاشرة"}]
+    },
+    {
+      "id": 98,
+      "source": "المنظمون يخطط لاقامه مؤتمر دولي العام القادم",
+      "target": "المنظمون يخططون لإقامة مؤتمر دولي العام القادم",
+      "errors": [{"type": "verb_conjugation", "source": "يخطط", "target": "يخططون"}, {"type": "hamza", "source": "لاقامه", "target": "لإقامة"}, {"type": "taa_marbuta", "source": "لاقامه", "target": "لإقامة"}]
+    },
+    {
+      "id": 99,
+      "source": "الفريق فاز بالمباراه الاخيره وتاهل للنهائي",
+      "target": "الفريق فاز بالمباراة الأخيرة وتأهل للنهائي",
+      "errors": [{"type": "taa_marbuta", "source": "بالمباراه", "target": "بالمباراة"}, {"type": "hamza", "source": "الاخيره", "target": "الأخيرة"}, {"type": "taa_marbuta", "source": "الاخيره", "target": "الأخيرة"}, {"type": "hamza", "source": "وتاهل", "target": "وتأهل"}]
+    },
+    {
+      "id": 100,
+      "source": "هذا العمل يتطلب صبر وجهد كبيرين لتحقيق النتائج المرجوه",
+      "target": "هذا العمل يتطلب صبرا وجهدا كبيرين لتحقيق النتائج المرجوة",
+      "errors": [{"type": "definiteness", "source": "صبر وجهد", "target": "صبرا وجهدا"}, {"type": "taa_marbuta", "source": "المرجوه", "target": "المرجوة"}]
+    }
+  ],
+  "statistics": {
+    "total_sentences": 100,
+    "total_errors": 436,
+    "error_distribution": {
+      "taa_marbuta": 215,
+      "hamza": 89,
+      "alif_maqsura": 51,
+      "verb_conjugation": 37,
+      "gender_agreement": 12,
+      "definiteness": 12,
+      "number_agreement": 5,
+      "preposition": 3,
+      "spelling": 5
+    },
+    "error_percentages": {
+      "taa_marbuta": "49.3%",
+      "hamza": "20.4%",
+      "alif_maqsura": "11.7%",
+      "verb_conjugation": "8.5%",
+      "gender_agreement": "2.8%",
+      "definiteness": "2.8%",
+      "number_agreement": "1.1%",
+      "preposition": "0.7%",
+      "spelling": "1.1%"
+    }
+  }
+}

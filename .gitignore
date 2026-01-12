@@ -146,8 +146,11 @@ ultimate_model.py
 # Test outputs
 test_output*.txt
 
-# Benchmark data (large)
-benchmark/
+# Benchmark (keep scripts, ignore large result files)
+benchmark/results/
+benchmark/**/evaluation_results.json
+benchmark/nahawi_competitive_results*.json
+benchmark/nul
 
 # Root data files
 roots/

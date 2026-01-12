@@ -1,0 +1,156 @@
+{
+  "name": "FASIH Arabic GEC Benchmark",
+  "version": "2.0.0",
+  "description": "World-class Arabic GEC benchmark from 100% real MSA corpus (zero QALB)",
+  "license": "CC-BY-4.0",
+  "url": "https://github.com/nahawi/benchmark",
+  "benchmarks": {
+    "core": {
+      "description": "Orthographic + preposition errors from real MSA corpus",
+      "test_samples": 820,
+      "dev_samples": 135,
+      "categories": [
+        "alif_madda",
+        "alif_maqsura",
+        "dad_za",
+        "dal_thal",
+        "hamza",
+        "missing_prep",
+        "taa_marbuta",
+        "wrong_prep"
+      ],
+      "distribution": {
+        "alif_maqsura": 125,
+        "dad_za": 132,
+        "alif_madda": 130,
+        "dal_thal": 131,
+        "hamza": 124,
+        "taa_marbuta": 123,
+        "missing_prep": 30,
+        "wrong_prep": 25
+      },
+      "source": "MSA Corpus (Wikipedia, UN, News) + Manual Curation"
+    },
+    "full": {
+      "description": "Complete coverage including all orthographic and preposition errors",
+      "test_samples": 877,
+      "dev_samples": 143,
+      "categories": [
+        "alif_madda",
+        "alif_maqsura",
+        "dad_za",
+        "dal_thal",
+        "hamza",
+        "missing_prep",
+        "taa_marbuta",
+        "wrong_prep"
+      ],
+      "distribution": {
+        "alif_madda": 133,
+        "alif_maqsura": 129,
+        "taa_marbuta": 120,
+        "dad_za": 132,
+        "dal_thal": 125,
+        "hamza": 125,
+        "missing_prep": 88,
+        "wrong_prep": 25
+      },
+      "source": "MSA Corpus + Manual Curation (100% QALB-free)"
+    },
+    "identity": {
+      "description": "Correct sentences for false positive testing",
+      "test_samples": 500,
+      "purpose": "Models should return these unchanged",
+      "source": "MSA Corpus (clean samples)"
+    }
+  },
+  "categories": {
+    "hamza": {
+      "name": "Hamza",
+      "arabic": "همزة",
+      "description": "Missing or incorrect hamza",
+      "examples": [
+        "اعلان → إعلان",
+        "اكثر → أكثر"
+      ]
+    },
+    "taa_marbuta": {
+      "name": "Taa Marbuta",
+      "arabic": "تاء مربوطة",
+      "description": "Confusion between ة and ه",
+      "examples": [
+        "المدرسه → المدرسة"
+      ]
+    },
+    "alif_maqsura": {
+      "name": "Alif Maqsura",
+      "arabic": "ألف مقصورة",
+      "description": "Confusion between ى and ي",
+      "examples": [
+        "علي → على",
+        "إلي → إلى"
+      ]
+    },
+    "alif_madda": {
+      "name": "Alif Madda",
+      "arabic": "ألف المد",
+      "description": "Missing madda on alif",
+      "examples": [
+        "الان → الآن",
+        "اخر → آخر"
+      ]
+    },
+    "dad_za": {
+      "name": "Dad/Za",
+      "arabic": "ض/ظ",
+      "description": "Confusion between emphatic consonants",
+      "examples": [
+        "نضر → نظر",
+        "ضهر → ظهر"
+      ]
+    },
+    "dal_thal": {
+      "name": "Dal/Thal",
+      "arabic": "د/ذ",
+      "description": "Confusion between dental consonants",
+      "examples": [
+        "هدا → هذا",
+        "كدلك → كذلك"
+      ]
+    },
+    "missing_prep": {
+      "name": "Missing Preposition",
+      "arabic": "حرف جر مفقود",
+      "description": "Required preposition is missing",
+      "examples": [
+        "يبحث المعلومات → يبحث عن المعلومات"
+      ]
+    },
+    "wrong_prep": {
+      "name": "Wrong Preposition",
+      "arabic": "حرف جر خاطئ",
+      "description": "Incorrect preposition choice",
+      "examples": [
+        "يعتمد من → يعتمد على"
+      ]
+    }
+  },
+  "evaluation": {
+    "primary_metric": "F0.5",
+    "rationale": "Precision matters more than recall - dont introduce new errors",
+    "pass_threshold": 0.9,
+    "minimum_threshold": 0.8,
+    "false_positive_target": 0.05
+  },
+  "quality": {
+    "qalb_samples": 0,
+    "synthetic_samples": 0,
+    "verified_samples": 2197,
+    "manual_prep_samples": 0,
+    "source": "100% MSA corpus + manual expert curation"
+  },
+  "notes": {
+    "v2_changes": "Removed all QALB samples for pure MSA benchmark",
+    "grammar_categories": "Agreement/syntax categories removed (required QALB). Future versions may add these from verified sources."
+  }
+}

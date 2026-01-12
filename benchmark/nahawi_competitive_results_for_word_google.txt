@@ -1,0 +1,405 @@
+======================================================================
+COMPETITIVE TEST: Copy these sentences into Word/Google Docs
+Record which errors each tool catches
+======================================================================
+
+[1] ذهب الي المدرسه
+    Expected: ذهب إلى المدرسة
+    Errors: alif_maqsura, taa_marbuta
+
+[2] هذه كتاب جميل
+    Expected: هذا كتاب جميل
+    Errors: gender_agreement
+
+[3] الطالبه ذهبت الي الجامعه
+    Expected: الطالبة ذهبت إلى الجامعة
+    Errors: taa_marbuta, alif_maqsura, taa_marbuta
+
+[4] يجب ان نفعل ذلك
+    Expected: يجب أن نفعل ذلك
+    Errors: hamza
+
+[5] قرأت الكتاب الذي اشتريته امس
+    Expected: قرأت الكتاب الذي اشتريته أمس
+    Errors: hamza
+
+[6] المدينه الكبيره جميله جدا
+    Expected: المدينة الكبيرة جميلة جدا
+    Errors: taa_marbuta, taa_marbuta, taa_marbuta
+
+[7] الرجال ذهب الي السوق
+    Expected: الرجال ذهبوا إلى السوق
+    Errors: verb_conjugation, alif_maqsura
+
+[8] هذا فتاه جميله
+    Expected: هذه فتاة جميلة
+    Errors: gender_agreement, taa_marbuta, taa_marbuta
+
+[9] انا اريد ان اذهب
+    Expected: أنا أريد أن أذهب
+    Errors: hamza, hamza, hamza, hamza
+
+[10] الكتاب علي الطاوله
+    Expected: الكتاب على الطاولة
+    Errors: alif_maqsura, taa_marbuta
+
+[11] راى الولد الكلب
+    Expected: رأى الولد الكلب
+    Errors: hamza
+
+[12] المعلمون يدرس الطلاب
+    Expected: المعلمون يدرسون الطلاب
+    Errors: verb_conjugation
+
+[13] هذه المشكله صعبه
+    Expected: هذه المشكلة صعبة
+    Errors: taa_marbuta, taa_marbuta
+
+[14] سافر الي مصر ثم الي لبنان
+    Expected: سافر إلى مصر ثم إلى لبنان
+    Errors: alif_maqsura, alif_maqsura
+
+[15] الجامعه الامريكيه في بيروت
+    Expected: الجامعة الأمريكية في بيروت
+    Errors: taa_marbuta, hamza, taa_marbuta
+
+[16] اكل الطعام بسرعه
+    Expected: أكل الطعام بسرعة
+    Errors: hamza, taa_marbuta
+
+[17] البنت الصغير ذهبت
+    Expected: البنت الصغيرة ذهبت
+    Errors: gender_agreement
+
+[18] يعتمد عن الظروف
+    Expected: يعتمد على الظروف
+    Errors: preposition_errors
+
+[19] الاسره السعيده
+    Expected: الأسرة السعيدة
+    Errors: hamza, taa_marbuta, taa_marbuta
+
+[20] متي ستذهب الي هناك
+    Expected: متى ستذهب إلى هناك
+    Errors: alif_maqsura, alif_maqsura
+
+[21] الولد و البنت ذهب
+    Expected: الولد والبنت ذهبا
+    Errors: verb_conjugation
+
+[22] هذا بيت كبيره
+    Expected: هذا بيت كبير
+    Errors: gender_agreement
+
+[23] المكتبه العامه مغلقه
+    Expected: المكتبة العامة مغلقة
+    Errors: taa_marbuta, taa_marbuta, taa_marbuta
+
+[24] اخذ الكتاب من المكتبه
+    Expected: أخذ الكتاب من المكتبة
+    Errors: hamza, taa_marbuta
+
+[25] الطلاب يدرس بجد
+    Expected: الطلاب يدرسون بجد
+    Errors: verb_conjugation
+
+[26] حتي الان لم يصل
+    Expected: حتى الآن لم يصل
+    Errors: alif_maqsura, hamza
+
+[27] القصه الطويله ممتعه
+    Expected: القصة الطويلة ممتعة
+    Errors: taa_marbuta, taa_marbuta, taa_marbuta
+
+[28] هولاء الرجال طويل
+    Expected: هؤلاء الرجال طويلون
+    Errors: hamza, number_agreement
+
+[29] الشركه الكبيره ناجحه
+    Expected: الشركة الكبيرة ناجحة
+    Errors: taa_marbuta, taa_marbuta, taa_marbuta
+
+[30] اين ذهب اخوك
+    Expected: أين ذهب أخوك
+    Errors: hamza, hamza
+
+[31] المراه تعمل في المستشفي
+    Expected: المرأة تعمل في المستشفى
+    Errors: hamza, alif_maqsura
+
+[32] الكتب الجديده وصلت
+    Expected: الكتب الجديدة وصلت
+    Errors: taa_marbuta
+
+[33] يريدون ان يذهبو
+    Expected: يريدون أن يذهبوا
+    Errors: hamza, verb_conjugation
+
+[34] البنات الثلاثه جميلات
+    Expected: البنات الثلاث جميلات
+    Errors: number_agreement
+
+[35] رايت الفيلم امس
+    Expected: رأيت الفيلم أمس
+    Errors: hamza, hamza
+
+[36] المدرسه الابتدائيه قريبه
+    Expected: المدرسة الابتدائية قريبة
+    Errors: taa_marbuta, taa_marbuta, taa_marbuta
+
+[37] هذه الرجل طويل
+    Expected: هذا الرجل طويل
+    Errors: gender_agreement
+
+[38] اشتريت سياره جديده
+    Expected: اشتريت سيارة جديدة
+    Errors: taa_marbuta, taa_marbuta
+
+[39] الاطفال يلعبون في الحديقه
+    Expected: الأطفال يلعبون في الحديقة
+    Errors: hamza, taa_marbuta
+
+[40] انتي جميله جدا
+    Expected: أنتِ جميلة جدا
+    Errors: hamza, taa_marbuta
+
+[41] الحكومه اتخذت قرار
+    Expected: الحكومة اتخذت قرارا
+    Errors: taa_marbuta, definiteness
+
+[42] علي الرغم من ذلك
+    Expected: على الرغم من ذلك
+    Errors: alif_maqsura
+
+[43] المبني الجديد كبير
+    Expected: المبنى الجديد كبير
+    Errors: alif_maqsura
+
+[44] الطالبات درسن بجد
+    Expected: الطالبات درسن بجد
+    Errors: 
+
+[45] هذا القلم لي
+    Expected: هذا القلم لي
+    Errors: 
+
+[46] الاقتصاد العالمي يتغير
+    Expected: الاقتصاد العالمي يتغير
+    Errors: 
+
+[47] اكتشف العلماء علاج جديد
+    Expected: اكتشف العلماء علاجا جديدا
+    Errors: definiteness, definiteness
+
+[48] المؤتمر سيعقد في القاهره
+    Expected: المؤتمر سيعقد في القاهرة
+    Errors: taa_marbuta
+
+[49] الجريده اليوميه
+    Expected: الجريدة اليومية
+    Errors: taa_marbuta, taa_marbuta
+
+[50] استمع الي الموسيقي
+    Expected: استمع إلى الموسيقى
+    Errors: alif_maqsura, alif_maqsura
+
+[51] هذه الفكره ممتازه
+    Expected: هذه الفكرة ممتازة
+    Errors: taa_marbuta, taa_marbuta
+
+[52] اتصل بي اذا احتجت مساعده
+    Expected: اتصل بي إذا احتجت مساعدة
+    Errors: hamza, taa_marbuta
+
+[53] المنطقه الصناعيه بعيده
+    Expected: المنطقة الصناعية بعيدة
+    Errors: taa_marbuta, taa_marbuta, taa_marbuta
+
+[54] لقد فهمت المساله
+    Expected: لقد فهمت المسألة
+    Errors: hamza
+
+[55] الماء ضروري للحياه
+    Expected: الماء ضروري للحياة
+    Errors: taa_marbuta
+
+[56] بناء علي ذلك
+    Expected: بناء على ذلك
+    Errors: alif_maqsura
+
+[57] الحقيبه الزرقاء ثقيله
+    Expected: الحقيبة الزرقاء ثقيلة
+    Errors: taa_marbuta, taa_marbuta
+
+[58] هل انت مستعد
+    Expected: هل أنت مستعد
+    Errors: hamza
+
+[59] الامتحان صعب جدا
+    Expected: الامتحان صعب جدا
+    Errors: 
+
+[60] تعلم اللغه العربيه
+    Expected: تعلم اللغة العربية
+    Errors: taa_marbuta, taa_marbuta
+
+[61] السياره الحمراء سريعه
+    Expected: السيارة الحمراء سريعة
+    Errors: taa_marbuta, taa_marbuta
+
+[62] الطبيب فحص المريض
+    Expected: الطبيب فحص المريض
+    Errors: 
+
+[63] المهندسون يعمل بجد
+    Expected: المهندسون يعملون بجد
+    Errors: verb_conjugation
+
+[64] اعطني الكتاب من فضلك
+    Expected: أعطني الكتاب من فضلك
+    Errors: hamza
+
+[65] الشمس مشرقه اليوم
+    Expected: الشمس مشرقة اليوم
+    Errors: taa_marbuta
+
+[66] هولاء الطلاب مجتهدين
+    Expected: هؤلاء الطلاب مجتهدون
+    Errors: hamza, number_agreement
+
+[67] المطعم قريب من هنا
+    Expected: المطعم قريب من هنا
+    Errors: 
+
+[68] الوزاره اعلنت القرار
+    Expected: الوزارة أعلنت القرار
+    Errors: taa_marbuta, hamza
+
+[69] لا اعرف الاجابه
+    Expected: لا أعرف الإجابة
+    Errors: hamza, hamza, taa_marbuta
+
+[70] الجامعه مغلقه اليوم
+    Expected: الجامعة مغلقة اليوم
+    Errors: taa_marbuta, taa_marbuta
+
+[71] قابلت صديقي القديم امس
+    Expected: قابلت صديقي القديم أمس
+    Errors: hamza
+
+[72] الاجتماع في الساعه الثالثه
+    Expected: الاجتماع في الساعة الثالثة
+    Errors: taa_marbuta, taa_marbuta
+
+[73] هذا الموضوع مهم جدا
+    Expected: هذا الموضوع مهم جدا
+    Errors: 
+
+[74] الطقس حار في الصيف
+    Expected: الطقس حار في الصيف
+    Errors: 
+
+[75] المكتب مفتوح حتي الخامسه
+    Expected: المكتب مفتوح حتى الخامسة
+    Errors: alif_maqsura, taa_marbuta
+
+[76] اريد ان اسال سؤال
+    Expected: أريد أن أسأل سؤالا
+    Errors: hamza, hamza, hamza, definiteness
+
+[77] الرحله كانت ممتعه
+    Expected: الرحلة كانت ممتعة
+    Errors: taa_marbuta, taa_marbuta
+
+[78] الاسعار مرتفعه هذا الشهر
+    Expected: الأسعار مرتفعة هذا الشهر
+    Errors: hamza, taa_marbuta
+
+[79] البنك يفتح في الثامنه
+    Expected: البنك يفتح في الثامنة
+    Errors: taa_marbuta
+
+[80] هذه الخطه ناجحه
+    Expected: هذه الخطة ناجحة
+    Errors: taa_marbuta, taa_marbuta
+
+[81] الابواب مغلقه
+    Expected: الأبواب مغلقة
+    Errors: hamza, taa_marbuta
+
+[82] مبني علي اساس صحيح
+    Expected: مبني على أساس صحيح
+    Errors: alif_maqsura, hamza
+
+[83] الطريقه الصحيحه
+    Expected: الطريقة الصحيحة
+    Errors: taa_marbuta, taa_marbuta
+
+[84] هذه النتيجه متوقعه
+    Expected: هذه النتيجة متوقعة
+    Errors: taa_marbuta, taa_marbuta
+
+[85] الحفله ستبدا في السابعه
+    Expected: الحفلة ستبدأ في السابعة
+    Errors: taa_marbuta, hamza, taa_marbuta
+
+[86] انهي العمل بسرعه
+    Expected: أنهِ العمل بسرعة
+    Errors: hamza, taa_marbuta
+
+[87] الشركات الكبيره تنمو
+    Expected: الشركات الكبيرة تنمو
+    Errors: taa_marbuta
+
+[88] اتفق الجميع علي الخطه
+    Expected: اتفق الجميع على الخطة
+    Errors: alif_maqsura, taa_marbuta
+
+[89] هذه المدينه قديمه جدا
+    Expected: هذه المدينة قديمة جدا
+    Errors: taa_marbuta, taa_marbuta
+
+[90] الطائره وصلت متاخره
+    Expected: الطائرة وصلت متأخرة
+    Errors: taa_marbuta, hamza, taa_marbuta
+
+[91] الاخبار سيئه اليوم
+    Expected: الأخبار سيئة اليوم
+    Errors: hamza, taa_marbuta
+
+[92] القهوه جاهزه
+    Expected: القهوة جاهزة
+    Errors: taa_marbuta, taa_marbuta
+
+[93] المباراه انتهت بالتعادل
+    Expected: المباراة انتهت بالتعادل
+    Errors: taa_marbuta
+
+[94] الشرطه وصلت بسرعه
+    Expected: الشرطة وصلت بسرعة
+    Errors: taa_marbuta, taa_marbuta
+
+[95] اتمني لك التوفيق
+    Expected: أتمنى لك التوفيق
+    Errors: hamza, alif_maqsura
+
+[96] الحديقه جميله في الربيع
+    Expected: الحديقة جميلة في الربيع
+    Errors: taa_marbuta, taa_marbuta
+
+[97] يجب ان نتعاون معا
+    Expected: يجب أن نتعاون معا
+    Errors: hamza
+
+[98] المكتبه تغلق في العاشره
+    Expected: المكتبة تغلق في العاشرة
+    Errors: taa_marbuta, taa_marbuta
+
+[99] الفريق فاز بالمباراه
+    Expected: الفريق فاز بالمباراة
+    Errors: taa_marbuta
+
+[100] هذا العمل يتطلب صبر
+    Expected: هذا العمل يتطلب صبرا
+    Errors: definiteness
+

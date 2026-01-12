@@ -1,0 +1,66 @@
+{
+  "version": "4.1",
+  "description": "FASIH v4.1 - Complete Arabic Grammarian Benchmark",
+  "target": "90%+ F0.5 = Arabic Grammarly ready",
+  "components": {
+    "orthography": {
+      "types": [
+        "hamza",
+        "taa_marbuta",
+        "alif_maqsura"
+      ],
+      "description": "Character-level orthographic rules"
+    },
+    "spelling": {
+      "types": [
+        "letter_confusion"
+      ],
+      "description": "Phonetically similar letter confusions"
+    },
+    "morphology": {
+      "types": [
+        "gender_agreement",
+        "number_agreement"
+      ],
+      "description": "Noun-adjective agreement"
+    },
+    "syntax": {
+      "types": [
+        "missing_preposition",
+        "wrong_preposition"
+      ],
+      "description": "Preposition usage"
+    },
+    "verb": {
+      "types": [
+        "verb_conjugation"
+      ],
+      "description": "Verb mood and number"
+    },
+    "article": {
+      "types": [
+        "definiteness"
+      ],
+      "description": "Definite article usage"
+    }
+  },
+  "statistics": {
+    "total_test": 2210,
+    "total_dev": 390,
+    "by_type": {
+      "taa_marbuta": 331,
+      "missing_preposition": 172,
+      "number_agreement": 129,
+      "definiteness": 115,
+      "alif_maqsura": 332,
+      "hamza": 344,
+      "letter_confusion_ض_ظ": 105,
+      "verb_conjugation": 134,
+      "letter_confusion_س_ص": 44,
+      "gender_agreement": 179,
+      "letter_confusion_د_ذ": 170,
+      "wrong_preposition": 132,
+      "letter_confusion_ت_ط": 23
+    }
+  }
+}

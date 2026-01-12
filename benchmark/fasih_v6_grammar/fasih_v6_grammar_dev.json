@@ -1,0 +1,702 @@
+[
+  {
+    "source": "السفينة الذكي تجذب الزوار من مختلف أنحاء العالم.",
+    "target": "السفينة الذكية تجذب الزوار من مختلف أنحاء العالم.",
+    "error_type": "gender_noun_adj",
+    "correction": "الذكي -> الذكية",
+    "pattern": "fem_sing_noun_masc_adj"
+  },
+  {
+    "source": "الدراسة الذي قابلناه يتميز بخبرة واسعة.",
+    "target": "الدراسة التي قابلناه يتميز بخبرة واسعة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "الشركة الذي حضرناه ناقش قضايا مهمة.",
+    "target": "الشركة التي حضرناه ناقش قضايا مهمة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "الدراسة الذي زرناها تتميز بجمال طبيعتها.",
+    "target": "الدراسة التي زرناها تتميز بجمال طبيعتها.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "الشركة السريع تجذب الزوار من مختلف أنحاء العالم.",
+    "target": "الشركة السريعة تجذب الزوار من مختلف أنحاء العالم.",
+    "error_type": "gender_noun_adj",
+    "correction": "السريع -> السريعة",
+    "pattern": "fem_sing_noun_masc_adj"
+  },
+  {
+    "source": "الباحثات يشاركون على تحقيق أهدافهن بنجاح.",
+    "target": "الباحثات يشاركن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يشاركون -> يشاركن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "المدرسون يحتاجوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "المدرسون يحتاجون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يحتاجوا -> يحتاجون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المعلمون يقدموا حلولاً مبتكرة لمشاكل الطاقة.",
+    "target": "المعلمون يقدمون حلولاً مبتكرة لمشاكل الطاقة.",
+    "error_type": "number_subj_verb",
+    "correction": "يقدموا -> يقدمون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "البناية الذي قرأتها أمس كانت مؤثرة جداً.",
+    "target": "البناية التي قرأتها أمس كانت مؤثرة جداً.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "البنات يسعون على تحقيق أهدافهن بنجاح.",
+    "target": "البنات يسعين على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يسعون -> يسعين",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "المحامون يشاركوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "المحامون يشاركون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يشاركوا -> يشاركون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "يتميز المهندسين بخبراتهم الواسعة.",
+    "target": "يتميز المهندسون بخبراتهم الواسعة.",
+    "error_type": "case_ending",
+    "correction": "المهندسين -> المهندسون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "يتميز المهندسين بخبراتهم الواسعة.",
+    "target": "يتميز المهندسون بخبراتهم الواسعة.",
+    "error_type": "case_ending",
+    "correction": "المهندسين -> المهندسون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "يعمل المدرسات المحترفون في مشاريع بحثية متقدمة.",
+    "target": "يعمل المدرسات المحترفات في مشاريع بحثية متقدمة.",
+    "error_type": "gender_noun_adj",
+    "correction": "المحترفون -> المحترفات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "الرجال يدققوا في السجلات المالية بدقة متناهية.",
+    "target": "الرجال يدققون في السجلات المالية بدقة متناهية.",
+    "error_type": "number_subj_verb",
+    "correction": "يدققوا -> يدققون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "قدم الموظفين عروضاً متميزة في المعرض.",
+    "target": "قدم الموظفون عروضاً متميزة في المعرض.",
+    "error_type": "case_ending",
+    "correction": "الموظفين -> الموظفون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الغرفة الذي قرأتها أمس كانت مؤثرة جداً.",
+    "target": "الغرفة التي قرأتها أمس كانت مؤثرة جداً.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "تميز الصحفيات المخلصون بإبداعهم في العمل.",
+    "target": "تميز الصحفيات المخلصات بإبداعهم في العمل.",
+    "error_type": "gender_noun_adj",
+    "correction": "المخلصون -> المخلصات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "يسعى المحاسبين لتطوير مهاراتهم باستمرار.",
+    "target": "يسعى المحاسبون لتطوير مهاراتهم باستمرار.",
+    "error_type": "case_ending",
+    "correction": "المحاسبين -> المحاسبون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المدينة الذي درسناها تتضمن معلومات قيمة.",
+    "target": "المدينة التي درسناها تتضمن معلومات قيمة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "المنظمة الذي اشتريناها تعمل بكفاءة عالية.",
+    "target": "المنظمة التي اشتريناها تعمل بكفاءة عالية.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "التقى الوزير بـالمعلمين لمناقشة القضايا.",
+    "target": "التقى الوزير بـالمعلمون لمناقشة القضايا.",
+    "error_type": "case_ending",
+    "correction": "المعلمين -> المعلمون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الساحة الذي درسناها تتضمن معلومات قيمة.",
+    "target": "الساحة التي درسناها تتضمن معلومات قيمة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "شارك في الندوة عدد من الباحثين.",
+    "target": "شارك في الندوة عدد من الباحثون.",
+    "error_type": "case_ending",
+    "correction": "الباحثين -> الباحثون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "يسعى المعلمين لتطوير مهاراتهم باستمرار.",
+    "target": "يسعى المعلمون لتطوير مهاراتهم باستمرار.",
+    "error_type": "case_ending",
+    "correction": "المعلمين -> المعلمون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "أثنى المدير على الموظفين لجهودهم.",
+    "target": "أثنى المدير على الموظفون لجهودهم.",
+    "error_type": "case_ending",
+    "correction": "الموظفين -> الموظفون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المكتبة الذي درسناها تتضمن معلومات قيمة.",
+    "target": "المكتبة التي درسناها تتضمن معلومات قيمة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "العاملون يكتبوا من الخبرات الدولية في مجالهم.",
+    "target": "العاملون يكتبون من الخبرات الدولية في مجالهم.",
+    "error_type": "number_subj_verb",
+    "correction": "يكتبوا -> يكتبون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "يشارك المترجمين في المؤتمرات الدولية بانتظام.",
+    "target": "يشارك المترجمون في المؤتمرات الدولية بانتظام.",
+    "error_type": "case_ending",
+    "correction": "المترجمين -> المترجمون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الأطباء يحتاجوا جهوداً كبيرة لرفع مستوى الأداء.",
+    "target": "الأطباء يحتاجون جهوداً كبيرة لرفع مستوى الأداء.",
+    "error_type": "number_subj_verb",
+    "correction": "يحتاجوا -> يحتاجون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "الباحثات حققوا جهوداً كبيرة لرفع مستوى الطالبات.",
+    "target": "الباحثات حققن جهوداً كبيرة لرفع مستوى الطالبات.",
+    "error_type": "verb_gender",
+    "correction": "حققوا -> حققن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "الشباب يدققوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "الشباب يدققون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يدققوا -> يدققون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المتخصصون يبذلوا على تطوير مهاراتهم باستمرار.",
+    "target": "المتخصصون يبذلون على تطوير مهاراتهم باستمرار.",
+    "error_type": "number_subj_verb",
+    "correction": "يبذلوا -> يبذلون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "يشارك المشاركين في المؤتمرات الدولية بانتظام.",
+    "target": "يشارك المشاركون في المؤتمرات الدولية بانتظام.",
+    "error_type": "case_ending",
+    "correction": "المشاركين -> المشاركون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الرجال يبحثوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "الرجال يبحثون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يبحثوا -> يبحثون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "الأطباء يدققوا جهوداً كبيرة لرفع مستوى الأداء.",
+    "target": "الأطباء يدققون جهوداً كبيرة لرفع مستوى الأداء.",
+    "error_type": "number_subj_verb",
+    "correction": "يدققوا -> يدققون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "يسعى المشاركين لتطوير مهاراتهم باستمرار.",
+    "target": "يسعى المشاركون لتطوير مهاراتهم باستمرار.",
+    "error_type": "case_ending",
+    "correction": "المشاركين -> المشاركون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "شارك في الندوة عدد من الموظفين.",
+    "target": "شارك في الندوة عدد من الموظفون.",
+    "error_type": "case_ending",
+    "correction": "الموظفين -> الموظفون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الأمهات أنجزوا جهوداً كبيرة لرفع مستوى الطالبات.",
+    "target": "الأمهات أنجزن جهوداً كبيرة لرفع مستوى الطالبات.",
+    "error_type": "verb_gender",
+    "correction": "أنجزوا -> أنجزن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "تخرج المديرات الذكيّون من أفضل الجامعات العربية.",
+    "target": "تخرج المديرات الذكيّات من أفضل الجامعات العربية.",
+    "error_type": "gender_noun_adj",
+    "correction": "الذكيّون -> الذكيّات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "المدرسة القصير تجذب الزوار من مختلف أنحاء العالم.",
+    "target": "المدرسة القصيرة تجذب الزوار من مختلف أنحاء العالم.",
+    "error_type": "gender_noun_adj",
+    "correction": "القصير -> القصيرة",
+    "pattern": "fem_sing_noun_masc_adj"
+  },
+  {
+    "source": "الطالبات حصلوا إلى الخارج لاستكمال دراستهن.",
+    "target": "الطالبات حصلن إلى الخارج لاستكمال دراستهن.",
+    "error_type": "verb_gender",
+    "correction": "حصلوا -> حصلن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "المدرسة الذي زرناها تتميز بجمال طبيعتها.",
+    "target": "المدرسة التي زرناها تتميز بجمال طبيعتها.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "الأطباء يبذلوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "الأطباء يبذلون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يبذلوا -> يبذلون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "الحافلة الذي قابلناه يتميز بخبرة واسعة.",
+    "target": "الحافلة التي قابلناه يتميز بخبرة واسعة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "تخرج الأطباء المخلصات من أفضل الجامعات العربية.",
+    "target": "تخرج الأطباء المخلصون من أفضل الجامعات العربية.",
+    "error_type": "gender_noun_adj",
+    "correction": "المخلصات -> المخلصون",
+    "pattern": "masc_noun_fem_adj"
+  },
+  {
+    "source": "كرّمت الوزارة المترجمين على إنجازاتهم.",
+    "target": "كرّمت الوزارة المترجمون على إنجازاتهم.",
+    "error_type": "case_ending",
+    "correction": "المترجمين -> المترجمون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الرواية الذي قرأتها أمس كانت مؤثرة جداً.",
+    "target": "الرواية التي قرأتها أمس كانت مؤثرة جداً.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "الموظفات يدرسون على تحقيق أهدافهن بنجاح.",
+    "target": "الموظفات يدرسن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يدرسون -> يدرسن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "الصحفيون يبحثوا عن فرص عمل في القطاع الخاص.",
+    "target": "الصحفيون يبحثون عن فرص عمل في القطاع الخاص.",
+    "error_type": "number_subj_verb",
+    "correction": "يبحثوا -> يبحثون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المتخصصات يعملون على تحقيق أهدافهن بنجاح.",
+    "target": "المتخصصات يعملن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يعملون -> يعملن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "القلم التي قرأناه كان مفيداً جداً.",
+    "target": "القلم الذي قرأناه كان مفيداً جداً.",
+    "error_type": "relative_pronoun",
+    "correction": "التي -> الذي",
+    "pattern": "masc_noun_fem_rel"
+  },
+  {
+    "source": "الباحثون يشاركوا من الخبرات الدولية في مجالهم.",
+    "target": "الباحثون يشاركون من الخبرات الدولية في مجالهم.",
+    "error_type": "number_subj_verb",
+    "correction": "يشاركوا -> يشاركون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المهندسات سافروا جوائز التميز على مستوى الوطن.",
+    "target": "المهندسات سافرن جوائز التميز على مستوى الوطن.",
+    "error_type": "verb_gender",
+    "correction": "سافروا -> سافرن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "البنات عملوا مشروعاً ضخماً يخدم المدينة.",
+    "target": "البنات عملن مشروعاً ضخماً يخدم المدينة.",
+    "error_type": "verb_gender",
+    "correction": "عملوا -> عملن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "الصحفيون المحترفات حصلوا على جوائز في المسابقة الدولية.",
+    "target": "الصحفيون المحترفون حصلوا على جوائز في المسابقة الدولية.",
+    "error_type": "gender_noun_adj",
+    "correction": "المحترفات -> المحترفون",
+    "pattern": "masc_noun_fem_adj"
+  },
+  {
+    "source": "أنجز المتخصصات المتفوقون مهامهم بكفاءة عالية.",
+    "target": "أنجز المتخصصات المتفوقات مهامهم بكفاءة عالية.",
+    "error_type": "gender_noun_adj",
+    "correction": "المتفوقون -> المتفوقات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "العلماء يقدموا جهوداً كبيرة لرفع مستوى الأداء.",
+    "target": "العلماء يقدمون جهوداً كبيرة لرفع مستوى الأداء.",
+    "error_type": "number_subj_verb",
+    "correction": "يقدموا -> يقدمون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "الممرضات يبحثون على تحقيق أهدافهن بنجاح.",
+    "target": "الممرضات يبحثن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يبحثون -> يبحثن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "حضر الممرضات المجتهدون الاجتماع الأسبوعي في الشركة.",
+    "target": "حضر الممرضات المجتهدات الاجتماع الأسبوعي في الشركة.",
+    "error_type": "gender_noun_adj",
+    "correction": "المجتهدون -> المجتهدات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "حضر المتخصصين الاجتماع السنوي للمنظمة.",
+    "target": "حضر المتخصصون الاجتماع السنوي للمنظمة.",
+    "error_type": "case_ending",
+    "correction": "المتخصصين -> المتخصصون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "يشارك العاملين في المؤتمرات الدولية بانتظام.",
+    "target": "يشارك العاملون في المؤتمرات الدولية بانتظام.",
+    "error_type": "case_ending",
+    "correction": "العاملين -> العاملون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المحامون يشاركوا عن فرص عمل في القطاع الخاص.",
+    "target": "المحامون يشاركون عن فرص عمل في القطاع الخاص.",
+    "error_type": "number_subj_verb",
+    "correction": "يشاركوا -> يشاركون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "الكتّاب يبحثوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "الكتّاب يبحثون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يبحثوا -> يبحثون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "يتميز العاملين بخبراتهم الواسعة.",
+    "target": "يتميز العاملون بخبراتهم الواسعة.",
+    "error_type": "case_ending",
+    "correction": "العاملين -> العاملون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المعلمات يبحثون على تحقيق أهدافهن بنجاح.",
+    "target": "المعلمات يبحثن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يبحثون -> يبحثن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "حضر المتخصصون الجادات الاجتماع الأسبوعي في الشركة.",
+    "target": "حضر المتخصصون الجادون الاجتماع الأسبوعي في الشركة.",
+    "error_type": "gender_noun_adj",
+    "correction": "الجادات -> الجادون",
+    "pattern": "masc_noun_fem_adj"
+  },
+  {
+    "source": "كرّمت الوزارة العاملين على إنجازاتهم.",
+    "target": "كرّمت الوزارة العاملون على إنجازاتهم.",
+    "error_type": "case_ending",
+    "correction": "العاملين -> العاملون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الطالبات يعملون على تحقيق أهدافهن بنجاح.",
+    "target": "الطالبات يعملن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يعملون -> يعملن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "الأطباء يكتبوا من الخبرات الدولية في مجالهم.",
+    "target": "الأطباء يكتبون من الخبرات الدولية في مجالهم.",
+    "error_type": "number_subj_verb",
+    "correction": "يكتبوا -> يكتبون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "شارك في الندوة عدد من المديرين.",
+    "target": "شارك في الندوة عدد من المديرون.",
+    "error_type": "case_ending",
+    "correction": "المديرين -> المديرون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "تخرج الفنانات النشيطون من أفضل الجامعات العربية.",
+    "target": "تخرج الفنانات النشيطات من أفضل الجامعات العربية.",
+    "error_type": "gender_noun_adj",
+    "correction": "النشيطون -> النشيطات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "تخرج الباحثات الجادون من أفضل الجامعات العربية.",
+    "target": "تخرج الباحثات الجادات من أفضل الجامعات العربية.",
+    "error_type": "gender_noun_adj",
+    "correction": "الجادون -> الجادات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "المسجد التي قرأناه كان مفيداً جداً.",
+    "target": "المسجد الذي قرأناه كان مفيداً جداً.",
+    "error_type": "relative_pronoun",
+    "correction": "التي -> الذي",
+    "pattern": "masc_noun_fem_rel"
+  },
+  {
+    "source": "المديرات يشاركون على تحقيق أهدافهن بنجاح.",
+    "target": "المديرات يشاركن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يشاركون -> يشاركن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "يشارك المتخصصين في المؤتمرات الدولية بانتظام.",
+    "target": "يشارك المتخصصون في المؤتمرات الدولية بانتظام.",
+    "error_type": "case_ending",
+    "correction": "المتخصصين -> المتخصصون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المعلمون يبذلوا في السجلات المالية بدقة متناهية.",
+    "target": "المعلمون يبذلون في السجلات المالية بدقة متناهية.",
+    "error_type": "number_subj_verb",
+    "correction": "يبذلوا -> يبذلون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المحاميات أبدعوا جهوداً كبيرة لرفع مستوى الطالبات.",
+    "target": "المحاميات أبدعن جهوداً كبيرة لرفع مستوى الطالبات.",
+    "error_type": "verb_gender",
+    "correction": "أبدعوا -> أبدعن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "كرّمت الوزارة المهندسين على إنجازاتهم.",
+    "target": "كرّمت الوزارة المهندسون على إنجازاتهم.",
+    "error_type": "case_ending",
+    "correction": "المهندسين -> المهندسون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المدرسون يبذلوا من الخبرات الدولية في مجالهم.",
+    "target": "المدرسون يبذلون من الخبرات الدولية في مجالهم.",
+    "error_type": "number_subj_verb",
+    "correction": "يبذلوا -> يبذلون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المحاسبون يسافروا على تطوير مهاراتهم باستمرار.",
+    "target": "المحاسبون يسافرون على تطوير مهاراتهم باستمرار.",
+    "error_type": "number_subj_verb",
+    "correction": "يسافروا -> يسافرون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "الباحثات يسعون على تحقيق أهدافهن بنجاح.",
+    "target": "الباحثات يسعين على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يسعون -> يسعين",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "حضر المشاركين الاجتماع السنوي للمنظمة.",
+    "target": "حضر المشاركون الاجتماع السنوي للمنظمة.",
+    "error_type": "case_ending",
+    "correction": "المشاركين -> المشاركون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الفنانات يقدمون على تحقيق أهدافهن بنجاح.",
+    "target": "الفنانات يقدمن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يقدمون -> يقدمن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "الطائرة الذي أنشأناها تقدم خدمات متميزة.",
+    "target": "الطائرة التي أنشأناها تقدم خدمات متميزة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "أثنى المدير على الموظفين لجهودهم.",
+    "target": "أثنى المدير على الموظفون لجهودهم.",
+    "error_type": "case_ending",
+    "correction": "الموظفين -> الموظفون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "كرّمت الوزارة المهندسين على إنجازاتهم.",
+    "target": "كرّمت الوزارة المهندسون على إنجازاتهم.",
+    "error_type": "case_ending",
+    "correction": "المهندسين -> المهندسون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "المدرسة الذي أنشأناها تقدم خدمات متميزة.",
+    "target": "المدرسة التي أنشأناها تقدم خدمات متميزة.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "الرجال يعملوا إلى تدريب مكثف على الأنظمة الحديثة.",
+    "target": "الرجال يعملون إلى تدريب مكثف على الأنظمة الحديثة.",
+    "error_type": "number_subj_verb",
+    "correction": "يعملوا -> يعملون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "أثنى المدير على العاملين لجهودهم.",
+    "target": "أثنى المدير على العاملون لجهودهم.",
+    "error_type": "case_ending",
+    "correction": "العاملين -> العاملون",
+    "pattern": "acc_for_nom"
+  },
+  {
+    "source": "الرجال يشاركوا في الأنشطة الثقافية والاجتماعية.",
+    "target": "الرجال يشاركون في الأنشطة الثقافية والاجتماعية.",
+    "error_type": "number_subj_verb",
+    "correction": "يشاركوا -> يشاركون",
+    "pattern": "colloquial_verb_ending"
+  },
+  {
+    "source": "المعلمات يسعون على تحقيق أهدافهن بنجاح.",
+    "target": "المعلمات يسعين على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يسعون -> يسعين",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "المدرسة الذي زرناها تتميز بجمال طبيعتها.",
+    "target": "المدرسة التي زرناها تتميز بجمال طبيعتها.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "حضر المحاسبات الماهرون الاجتماع الأسبوعي في الشركة.",
+    "target": "حضر المحاسبات الماهرات الاجتماع الأسبوعي في الشركة.",
+    "error_type": "gender_noun_adj",
+    "correction": "الماهرون -> الماهرات",
+    "pattern": "fem_noun_masc_adj"
+  },
+  {
+    "source": "الباحثات درسوا إسهامات كبيرة في المجال العلمي.",
+    "target": "الباحثات درسن إسهامات كبيرة في المجال العلمي.",
+    "error_type": "verb_gender",
+    "correction": "درسوا -> درسن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "الباحثات صمموا أرقاماً قياسية في البطولة.",
+    "target": "الباحثات صممن أرقاماً قياسية في البطولة.",
+    "error_type": "verb_gender",
+    "correction": "صمموا -> صممن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "المهندسات يجتهدون على تحقيق أهدافهن بنجاح.",
+    "target": "المهندسات يجتهدن على تحقيق أهدافهن بنجاح.",
+    "error_type": "verb_gender",
+    "correction": "يجتهدون -> يجتهدن",
+    "pattern": "fem_subj_masc_verb_present"
+  },
+  {
+    "source": "الطائرة الذي اخترناه يناسب احتياجاتنا.",
+    "target": "الطائرة التي اخترناه يناسب احتياجاتنا.",
+    "error_type": "relative_pronoun",
+    "correction": "الذي -> التي",
+    "pattern": "fem_noun_masc_rel"
+  },
+  {
+    "source": "المدرسات ذهبوا جهوداً كبيرة لرفع مستوى الطالبات.",
+    "target": "المدرسات ذهبن جهوداً كبيرة لرفع مستوى الطالبات.",
+    "error_type": "verb_gender",
+    "correction": "ذهبوا -> ذهبن",
+    "pattern": "fem_subj_masc_verb_past"
+  },
+  {
+    "source": "كرّمت الجامعة الطبيبات المخلصون على إنجازاتهم العلمية.",
+    "target": "كرّمت الجامعة الطبيبات المخلصات على إنجازاتهم العلمية.",
+    "error_type": "gender_noun_adj",
+    "correction": "المخلصون -> المخلصات",
+    "pattern": "fem_noun_masc_adj"
+  }
+]

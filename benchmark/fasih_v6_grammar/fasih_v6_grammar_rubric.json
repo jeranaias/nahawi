@@ -1,0 +1,68 @@
+{
+  "version": "6.0",
+  "description": "FASIH v6 - Grammar-Focused Arabic GEC Benchmark",
+  "purpose": "Evaluate grammar agreement capabilities specifically",
+  "categories": {
+    "gender_noun_adj": {
+      "arabic": "مطابقة الجنس (اسم + صفة)",
+      "description": "Noun-adjective gender agreement",
+      "examples": [
+        "الطالبات المتفوقين → المتفوقات"
+      ],
+      "count": 100
+    },
+    "number_subj_verb": {
+      "arabic": "مطابقة العدد (فاعل + فعل)",
+      "description": "Subject-verb number agreement, colloquial verb forms",
+      "examples": [
+        "يحتاجوا → يحتاجون"
+      ],
+      "count": 100
+    },
+    "verb_gender": {
+      "arabic": "مطابقة جنس الفعل",
+      "description": "Verb-subject gender agreement",
+      "examples": [
+        "الطالبات حصلوا → حصلن"
+      ],
+      "count": 100
+    },
+    "relative_pronoun": {
+      "arabic": "الاسم الموصول",
+      "description": "Relative pronoun gender agreement",
+      "examples": [
+        "القصة الذي → التي"
+      ],
+      "count": 100
+    },
+    "case_ending": {
+      "arabic": "علامة الإعراب",
+      "description": "Case ending (nominative vs accusative/genitive)",
+      "examples": [
+        "المعلمين يعملون → المعلمون"
+      ],
+      "count": 100
+    }
+  },
+  "statistics": {
+    "total_test": 400,
+    "total_dev": 100,
+    "total": 500,
+    "categories": 5,
+    "by_category": {
+      "gender_noun_adj": 100,
+      "number_subj_verb": 100,
+      "verb_gender": 100,
+      "relative_pronoun": 100,
+      "case_ending": 100
+    }
+  },
+  "evaluation": {
+    "metric": "F0.5 per category",
+    "success_threshold": {
+      "minimum": 50,
+      "target": 70,
+      "excellent": 85
+    }
+  }
+}

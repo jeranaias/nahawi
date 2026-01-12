@@ -1,0 +1,60 @@
+{
+  "version": "5.1",
+  "description": "FASIH v5.1 - World-Class Arabic GEC Benchmark",
+  "target": "90%+ F0.5 = Production-ready Arabic GEC",
+  "composition": {
+    "real_corpus": {
+      "source": "23M sentence MSA Wikipedia corpus",
+      "categories": [
+        "hamza",
+        "taa_marbuta",
+        "letter_dad_za",
+        "letter_dal_thal",
+        "alif_maqsura",
+        "alif_madda"
+      ],
+      "samples": 900
+    },
+    "synthetic": {
+      "source": "V7 Ultimate generator",
+      "categories": [
+        "definiteness",
+        "wrong_prep",
+        "common_misspelling",
+        "letter_sst",
+        "gender_agreement",
+        "mixed_all",
+        "number_agreement",
+        "verb_form",
+        "stress_test",
+        "mixed_orthographic"
+      ],
+      "samples": 1000
+    }
+  },
+  "statistics": {
+    "total_test": 1520,
+    "total_dev": 380,
+    "total": 1900,
+    "unique_vocabulary": 5800,
+    "categories": 16,
+    "by_type": {
+      "letter_dad_za": 125,
+      "letter_dal_thal": 118,
+      "alif_maqsura": 122,
+      "taa_marbuta": 119,
+      "alif_madda": 115,
+      "hamza": 121,
+      "number_agreement": 80,
+      "wrong_prep": 80,
+      "verb_form": 80,
+      "mixed_orthographic": 80,
+      "mixed_all": 80,
+      "letter_sst": 80,
+      "stress_test": 80,
+      "gender_agreement": 80,
+      "definiteness": 80,
+      "common_misspelling": 80
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "FASIH Arabic GEC Benchmark",
+  "version": "3.0.0",
+  "description": "Exhaustive Arabic GEC benchmark with 18 error categories",
+  "license": "CC-BY-4.0",
+  "benchmarks": {
+    "test": {
+      "samples": 1482,
+      "categories": [
+        "alif_madda",
+        "alif_maqsura",
+        "dad_za",
+        "dal_thal",
+        "definiteness",
+        "gender_agreement",
+        "hamza",
+        "hamza_wasl",
+        "missing_char",
+        "missing_prep",
+        "number_agreement",
+        "repeated_char",
+        "space_join",
+        "space_split",
+        "taa_marbuta",
+        "tanwin",
+        "verb_agreement",
+        "wrong_prep"
+      ],
+      "distribution": {
+        "alif_madda": 110,
+        "alif_maqsura": 106,
+        "dad_za": 112,
+        "dal_thal": 111,
+        "definiteness": 85,
+        "gender_agreement": 76,
+        "hamza": 105,
+        "hamza_wasl": 127,
+        "missing_char": 42,
+        "missing_prep": 110,
+        "number_agreement": 25,
+        "repeated_char": 42,
+        "space_join": 85,
+        "space_split": 85,
+        "taa_marbuta": 104,
+        "tanwin": 85,
+        "verb_agreement": 27,
+        "wrong_prep": 45
+      }
+    },
+    "dev": {
+      "samples": 269
+    },
+    "identity": {
+      "samples": 500,
+      "purpose": "False positive testing"
+    }
+  },
+  "categories": {
+    "hamza": "أ/إ/آ/ء placement",
+    "hamza_wasl": "همزة الوصل vs همزة القطع",
+    "taa_marbuta": "ة vs ه confusion",
+    "alif_maqsura": "ى vs ي at word end",
+    "alif_madda": "آ vs اا",
+    "dad_za": "ض vs ظ confusion",
+    "dal_thal": "د vs ذ confusion",
+    "tanwin": "تنوين spelling",
+    "space_join": "Words incorrectly joined",
+    "space_split": "Words incorrectly split",
+    "gender_agreement": "Noun-adjective gender mismatch",
+    "number_agreement": "Singular/plural mismatch",
+    "verb_agreement": "Subject-verb agreement",
+    "definiteness": "Article agreement (ال)",
+    "missing_prep": "Required preposition missing",
+    "wrong_prep": "Incorrect preposition",
+    "repeated_char": "Doubled character typo",
+    "missing_char": "Missing character typo"
+  },
+  "evaluation": {
+    "primary_metric": "F0.5",
+    "pass_threshold": 0.9,
+    "minimum_threshold": 0.8
+  }
+}

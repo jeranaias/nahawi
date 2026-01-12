@@ -1,0 +1,629 @@
+{
+  "version": "4.0",
+  "description": "Comprehensive Competitive Test Set V4 - All 13 FASIH Error Types",
+  "methodology": "Professional MSA sentences covering all error categories from FASIH v4.1 benchmark",
+  "target_comparison": ["Nahawi V5 Hybrid", "Microsoft Word Arabic", "Google Docs Arabic"],
+  "statistics": {
+    "total_sentences": 100,
+    "average_words_per_sentence": 19.8,
+    "total_errors": 520,
+    "error_types": 13
+  },
+  "error_distribution": {
+    "taa_marbuta": {"count": 80, "percentage": 15.4, "category": "orthography"},
+    "hamza": {"count": 78, "percentage": 15.0, "category": "orthography"},
+    "alif_maqsura": {"count": 75, "percentage": 14.4, "category": "orthography"},
+    "gender_agreement": {"count": 45, "percentage": 8.7, "category": "morphology"},
+    "letter_confusion_د_ذ": {"count": 42, "percentage": 8.1, "category": "spelling"},
+    "missing_preposition": {"count": 40, "percentage": 7.7, "category": "syntax"},
+    "wrong_preposition": {"count": 35, "percentage": 6.7, "category": "syntax"},
+    "verb_conjugation": {"count": 35, "percentage": 6.7, "category": "verb"},
+    "number_agreement": {"count": 30, "percentage": 5.8, "category": "morphology"},
+    "definiteness": {"count": 28, "percentage": 5.4, "category": "article"},
+    "letter_confusion_ض_ظ": {"count": 18, "percentage": 3.5, "category": "spelling"},
+    "letter_confusion_س_ص": {"count": 10, "percentage": 1.9, "category": "spelling"},
+    "letter_confusion_ت_ط": {"count": 4, "percentage": 0.8, "category": "spelling"}
+  },
+  "test_cases": [
+    {
+      "id": 1,
+      "source": "اعلنت الحكومه عن خطه جديده لتطوير البنيه التحتيه في المناطق الريفيه خلال السنوات الخمس القادمه",
+      "target": "أعلنت الحكومة عن خطة جديدة لتطوير البنية التحتية في المناطق الريفية خلال السنوات الخمس القادمة",
+      "errors": ["hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 2,
+      "source": "يسعى الباحث الى دراسه تاثير التكنولوجيا الحديثه على منظومه التعليم في الجامعات العربيه",
+      "target": "يسعى الباحث إلى دراسة تأثير التكنولوجيا الحديثة على منظومة التعليم في الجامعات العربية",
+      "errors": ["hamza", "taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 3,
+      "source": "تعتبر هده المنطقه من اكثر المناطق ازدهارا في الدوله بسبب موقعها الاستراتيجي المميز",
+      "target": "تعتبر هذه المنطقة من أكثر المناطق ازدهارا في الدولة بسبب موقعها الاستراتيجي المميز",
+      "errors": ["letter_confusion_د_ذ", "taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 4,
+      "source": "قدم الوزير تقرير شامل عن الانجازات التي حققتها الوزاره خلال الفتره الماضيه امام البرلمان",
+      "target": "قدم الوزير تقريرا شاملا عن الإنجازات التي حققتها الوزارة خلال الفترة الماضية أمام البرلمان",
+      "errors": ["definiteness", "definiteness", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 5,
+      "source": "يبحث الطلاب المعلومات في المكتبه الرقميه لاكمال مشاريعهم البحثيه قبل نهايه الفصل الدراسي",
+      "target": "يبحث الطلاب عن المعلومات في المكتبة الرقمية لإكمال مشاريعهم البحثية قبل نهاية الفصل الدراسي",
+      "errors": ["missing_preposition", "taa_marbuta", "taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 6,
+      "source": "المدينه الكبير تحتاج الى بنيه تحتيه متطوره لاستيعاب الزياده السكانيه المتوقعه في السنوات المقبله",
+      "target": "المدينة الكبيرة تحتاج إلى بنية تحتية متطورة لاستيعاب الزيادة السكانية المتوقعة في السنوات المقبلة",
+      "errors": ["taa_marbuta", "gender_agreement", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 7,
+      "source": "ادا اردت النجاح في هدا المجال فعليك ان تجتهد وتثابر حتى تحقق اهدافك المنشوده",
+      "target": "إذا أردت النجاح في هذا المجال فعليك أن تجتهد وتثابر حتى تحقق أهدافك المنشودة",
+      "errors": ["hamza", "letter_confusion_د_ذ", "letter_confusion_د_ذ", "hamza", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 8,
+      "source": "الشركه العالميه اعلنت في مؤتمرها السنوي عن استثمارات ضخمه في قطاع الطاقه المتجدده",
+      "target": "الشركة العالمية أعلنت في مؤتمرها السنوي عن استثمارات ضخمة في قطاع الطاقة المتجددة",
+      "errors": ["taa_marbuta", "taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 9,
+      "source": "الطالبات المتفوقين حصلوا على منح دراسيه من الجامعه لاستكمال دراستهم في الخارج",
+      "target": "الطالبات المتفوقات حصلن على منح دراسية من الجامعة لاستكمال دراستهن في الخارج",
+      "errors": ["gender_agreement", "verb_conjugation", "taa_marbuta", "taa_marbuta", "gender_agreement"]
+    },
+    {
+      "id": 10,
+      "source": "نضر الى الامر من زاويه مختلفه سيساعدنا على فهم المشكله بشكل افضل واعمق",
+      "target": "نظر إلى الأمر من زاوية مختلفة سيساعدنا على فهم المشكلة بشكل أفضل وأعمق",
+      "errors": ["letter_confusion_ض_ظ", "hamza", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "hamza", "hamza"]
+    },
+    {
+      "id": 11,
+      "source": "تتميز الثقافه العربيه بتنوعها وغناها وتاثيرها الكبير على الحضارات الاخرى عبر التاريخ",
+      "target": "تتميز الثقافة العربية بتنوعها وغناها وتأثيرها الكبير على الحضارات الأخرى عبر التاريخ",
+      "errors": ["taa_marbuta", "taa_marbuta", "hamza", "hamza"]
+    },
+    {
+      "id": 12,
+      "source": "الموظفين الجدد يحتاجوا الى تدريب مكثف على استخدام الانظمه الحديثه في الشركه",
+      "target": "الموظفون الجدد يحتاجون إلى تدريب مكثف على استخدام الأنظمة الحديثة في الشركة",
+      "errors": ["number_agreement", "verb_conjugation", "hamza", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 13,
+      "source": "يرغب في السفر الى اوروبا لزياره المتاحف والمعالم التاريخيه الشهيره هناك",
+      "target": "يرغب في السفر إلى أوروبا لزيارة المتاحف والمعالم التاريخية الشهيرة هناك",
+      "errors": ["hamza", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 14,
+      "source": "اصبحت التجاره الالكترونيه جزءا اساسيا من الاقتصاد الحديث في معضم دول العالم",
+      "target": "أصبحت التجارة الإلكترونية جزءا أساسيا من الاقتصاد الحديث في معظم دول العالم",
+      "errors": ["hamza", "taa_marbuta", "hamza", "taa_marbuta", "hamza", "letter_confusion_ض_ظ"]
+    },
+    {
+      "id": 15,
+      "source": "الاطباء المتخصصين يعملون جاهدا لايجاد علاج فعال لهدا المرض النادر والخطير",
+      "target": "الأطباء المتخصصون يعملون جاهدين لإيجاد علاج فعال لهذا المرض النادر والخطير",
+      "errors": ["hamza", "number_agreement", "number_agreement", "hamza", "letter_confusion_د_ذ"]
+    },
+    {
+      "id": 16,
+      "source": "اشترك الوفد بالمؤتمر الدولي للبيئه الذى عقد في العاصمه الفرنسيه باريس",
+      "target": "اشترك الوفد في المؤتمر الدولي للبيئة الذي عقد في العاصمة الفرنسية باريس",
+      "errors": ["wrong_preposition", "taa_marbuta", "alif_maqsura", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 17,
+      "source": "تحرص الامهات الفاضلات على تربيه ابنائهن تربيه سليمه تعتمد على القيم والاخلاق",
+      "target": "تحرص الأمهات الفاضلات على تربية أبنائهن تربية سليمة تعتمد على القيم والأخلاق",
+      "errors": ["hamza", "taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 18,
+      "source": "الندام المبكر على الاخطاء يساعد الانسان على تجنب تكرارها في المستقبل",
+      "target": "الندم المبكر على الأخطاء يساعد الإنسان على تجنب تكرارها في المستقبل",
+      "errors": ["alif_maqsura", "hamza", "hamza"]
+    },
+    {
+      "id": 19,
+      "source": "تسعى الدوله الى توفير السكن الملائم لجميع المواطنين خاصه ذوي الدخل المحدود",
+      "target": "تسعى الدولة إلى توفير السكن الملائم لجميع المواطنين خاصة ذوي الدخل المحدود",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 20,
+      "source": "المعلمين المتميزون يؤثرون تاثيرا ايجابيا على مستوى الطلاب الاكاديمي والسلوكي",
+      "target": "المعلمون المتميزون يؤثرون تأثيرا إيجابيا على مستوى الطلاب الأكاديمي والسلوكي",
+      "errors": ["number_agreement", "hamza", "hamza", "hamza"]
+    },
+    {
+      "id": 21,
+      "source": "يعتمد النجاح على الاجتهاد والمثابره وليس فقط على الموهبه الفطريه",
+      "target": "يعتمد النجاح على الاجتهاد والمثابرة وليس فقط على الموهبة الفطرية",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 22,
+      "source": "هدا الكتاب يتناول قضايا فكريه معاصره تهم الشباب العربى في العصر الحديث",
+      "target": "هذا الكتاب يتناول قضايا فكرية معاصرة تهم الشباب العربي في العصر الحديث",
+      "errors": ["letter_confusion_د_ذ", "taa_marbuta", "taa_marbuta", "alif_maqsura"]
+    },
+    {
+      "id": 23,
+      "source": "القراره الذي اتخذتها اللجنه جاء بعد مداولات طويله ومعمقه بين الاعضاء",
+      "target": "القرار الذي اتخذته اللجنة جاء بعد مداولات طويلة ومعمقة بين الأعضاء",
+      "errors": ["gender_agreement", "gender_agreement", "taa_marbuta", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 24,
+      "source": "يتطلع المستثمرون الى دخول السوق السعودى الواعد بفرص استثماريه كبيره",
+      "target": "يتطلع المستثمرون إلى دخول السوق السعودي الواعد بفرص استثمارية كبيرة",
+      "errors": ["hamza", "alif_maqsura", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 25,
+      "source": "الندوه الثقافيه ناقشت تاثير وسائل التواصل الاجتماعى على اللغه العربيه",
+      "target": "الندوة الثقافية ناقشت تأثير وسائل التواصل الاجتماعي على اللغة العربية",
+      "errors": ["taa_marbuta", "taa_marbuta", "hamza", "alif_maqsura", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 26,
+      "source": "تفتقر القريه الى الخدمات الاساسيه مثل الماء والكهرباء والطرق المعبده",
+      "target": "تفتقر القرية إلى الخدمات الأساسية مثل الماء والكهرباء والطرق المعبدة",
+      "errors": ["taa_marbuta", "hamza", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 27,
+      "source": "المهندسات الماهرات صمموا مشروع ضخم يخدم المدينه لعقود قادمه",
+      "target": "المهندسات الماهرات صممن مشروعا ضخما يخدم المدينة لعقود قادمة",
+      "errors": ["verb_conjugation", "definiteness", "definiteness", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 28,
+      "source": "انتضر الجمهور ساعات طويله لمشاهده الحفل الغنائى الكبير في الملعب",
+      "target": "انتظر الجمهور ساعات طويلة لمشاهدة الحفل الغنائي الكبير في الملعب",
+      "errors": ["letter_confusion_ض_ظ", "taa_marbuta", "taa_marbuta", "alif_maqsura"]
+    },
+    {
+      "id": 29,
+      "source": "يفضل الكاتب الكتابه في ساعات الصباح الباكره حيث يكون الهدوء والسكينه",
+      "target": "يفضل الكاتب الكتابة في ساعات الصباح الباكرة حيث يكون الهدوء والسكينة",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 30,
+      "source": "تحدث المدير على اهميه التخطيط الاستراتيجى لنجاح اي مشروع تجارى",
+      "target": "تحدث المدير عن أهمية التخطيط الاستراتيجي لنجاح أي مشروع تجاري",
+      "errors": ["wrong_preposition", "hamza", "taa_marbuta", "alif_maqsura", "hamza", "alif_maqsura"]
+    },
+    {
+      "id": 31,
+      "source": "اكتشف العلماء دواء جديد لعلاج مرض السرطان الدي يصيب الالاف سنويا",
+      "target": "اكتشف العلماء دواء جديدا لعلاج مرض السرطان الذي يصيب الآلاف سنويا",
+      "errors": ["definiteness", "letter_confusion_د_ذ", "hamza"]
+    },
+    {
+      "id": 32,
+      "source": "الجامعه الاسلاميه تقدم منح دراسيه سنويه للطلاب المتفوقين من مختلف الدول",
+      "target": "الجامعة الإسلامية تقدم منحا دراسية سنوية للطلاب المتفوقين من مختلف الدول",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta", "definiteness", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 33,
+      "source": "يهتم بدراسه الادب العربى القديم والحديث ويكتب مقالات نقديه في المجلات",
+      "target": "يهتم بدراسة الأدب العربي القديم والحديث ويكتب مقالات نقدية في المجلات",
+      "errors": ["taa_marbuta", "hamza", "alif_maqsura", "taa_marbuta"]
+    },
+    {
+      "id": 34,
+      "source": "الطفل الصغيره تعلم المشي بسرعه وبدا يستكشف البيت بفضول كبير",
+      "target": "الطفل الصغير تعلم المشي بسرعة وبدأ يستكشف البيت بفضول كبير",
+      "errors": ["gender_agreement", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 35,
+      "source": "رفض الموظف القرار وتقدم باستقالته احتجاجا على سياسه الاداره الجديده",
+      "target": "رفض الموظف القرار وتقدم باستقالته احتجاجا على سياسة الإدارة الجديدة",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 36,
+      "source": "يتسائل الباحثون عن اسباب انتشار هده الظاهره في المجتمعات العربيه المعاصره",
+      "target": "يتساءل الباحثون عن أسباب انتشار هذه الظاهرة في المجتمعات العربية المعاصرة",
+      "errors": ["hamza", "hamza", "letter_confusion_د_ذ", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 37,
+      "source": "العماره الاسلاميه تتميز بجمالها وروعه تصاميمها الهندسيه الفريده",
+      "target": "العمارة الإسلامية تتميز بجمالها وروعة تصاميمها الهندسية الفريدة",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 38,
+      "source": "الاطفال الصغار يحتاجوا الى رعايه خاصه واهتمام مستمر من الوالدين",
+      "target": "الأطفال الصغار يحتاجون إلى رعاية خاصة واهتمام مستمر من الوالدين",
+      "errors": ["hamza", "verb_conjugation", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 39,
+      "source": "تتجه الشركات للاستثمار بالذكاء الاصطناعى لتحسين انتاجيتها وكفاءتها",
+      "target": "تتجه الشركات للاستثمار في الذكاء الاصطناعي لتحسين إنتاجيتها وكفاءتها",
+      "errors": ["wrong_preposition", "alif_maqsura", "hamza"]
+    },
+    {
+      "id": 40,
+      "source": "القصه الدي قراتها امس كانت مؤثره جدا وتركت اثرا عميقا في نفسي",
+      "target": "القصة التي قرأتها أمس كانت مؤثرة جدا وتركت أثرا عميقا في نفسي",
+      "errors": ["taa_marbuta", "letter_confusion_د_ذ", "hamza", "hamza", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 41,
+      "source": "المنطقه الساحليه الجميله تجذب السياح من مختلف انحاء العالم سنويا",
+      "target": "المنطقة الساحلية الجميلة تجذب السياح من مختلف أنحاء العالم سنويا",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 42,
+      "source": "طالب الطلاب بتحسين مستوى الخدمات الجامعيه وتوفير بيئه تعليميه افضل",
+      "target": "طالب الطلاب بتحسين مستوى الخدمات الجامعية وتوفير بيئة تعليمية أفضل",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 43,
+      "source": "المتحدث الرسمى صرح بان الاجتماع سيعقد في موعده المحدد دون تاخير",
+      "target": "المتحدث الرسمي صرح بأن الاجتماع سيعقد في موعده المحدد دون تأخير",
+      "errors": ["alif_maqsura", "hamza", "hamza"]
+    },
+    {
+      "id": 44,
+      "source": "تضيق الشوارع الضيقه بالمشاه والسيارات خاصه في ساعات الدروه",
+      "target": "تضيق الشوارع الضيقة بالمشاة والسيارات خاصة في ساعات الذروة",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta", "letter_confusion_د_ذ"]
+    },
+    {
+      "id": 45,
+      "source": "العلماء المسلمين ساهموا مساهمه كبيره في تطور العلوم والمعارف الانسانيه",
+      "target": "العلماء المسلمون ساهموا مساهمة كبيرة في تطور العلوم والمعارف الإنسانية",
+      "errors": ["number_agreement", "taa_marbuta", "taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 46,
+      "source": "يجب عليك ان تفكر فى الامر جيدا قبل ان تتخد اي قرار مصيرى",
+      "target": "يجب عليك أن تفكر في الأمر جيدا قبل أن تتخذ أي قرار مصيري",
+      "errors": ["hamza", "wrong_preposition", "hamza", "hamza", "letter_confusion_د_ذ", "hamza", "alif_maqsura"]
+    },
+    {
+      "id": 47,
+      "source": "المحاضره الاكاديميه تناولت موضوع التغير المناخى واثاره على البيئه",
+      "target": "المحاضرة الأكاديمية تناولت موضوع التغير المناخي وآثاره على البيئة",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta", "alif_maqsura", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 48,
+      "source": "الشباب المتحمسين يبحثوا عن فرص عمل في القطاع الخاص والحكومى",
+      "target": "الشباب المتحمسون يبحثون عن فرص عمل في القطاع الخاص والحكومي",
+      "errors": ["number_agreement", "verb_conjugation", "alif_maqsura"]
+    },
+    {
+      "id": 49,
+      "source": "الرواية العربيه الحديثه تعكس واقع المجتمع بكل تناقضاته وتحدياته",
+      "target": "الرواية العربية الحديثة تعكس واقع المجتمع بكل تناقضاته وتحدياته",
+      "errors": ["taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 50,
+      "source": "يتميز الادب الجاهلى بقوه تعبيره وجزاله الفاظه وعمق معانيه",
+      "target": "يتميز الأدب الجاهلي بقوة تعبيره وجزالة ألفاظه وعمق معانيه",
+      "errors": ["hamza", "alif_maqsura", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 51,
+      "source": "استغرق المشروع ثلاث سنين لاكتماله وتكلف ملايين الدولارات من الميزانيه العامه",
+      "target": "استغرق المشروع ثلاث سنوات لاكتماله وتكلف ملايين الدولارات من الميزانية العامة",
+      "errors": ["number_agreement", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 52,
+      "source": "الفريق الطبى نجح فى اجراء عمليه جراحيه معقده استمرت اثنتا عشره ساعه",
+      "target": "الفريق الطبي نجح في إجراء عملية جراحية معقدة استمرت اثنتي عشرة ساعة",
+      "errors": ["alif_maqsura", "wrong_preposition", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "gender_agreement", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 53,
+      "source": "الحكومه اتخدت اجراءات صارمه للحد من التلوث البيئى في المدن الكبرى",
+      "target": "الحكومة اتخذت إجراءات صارمة للحد من التلوث البيئي في المدن الكبرى",
+      "errors": ["taa_marbuta", "letter_confusion_د_ذ", "hamza", "taa_marbuta", "alif_maqsura"]
+    },
+    {
+      "id": 54,
+      "source": "تتالف اللجنه من خمسه عشر عضوا يمثلون مختلف القطاعات الحكوميه والخاصه",
+      "target": "تتألف اللجنة من خمسة عشر عضوا يمثلون مختلف القطاعات الحكومية والخاصة",
+      "errors": ["hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 55,
+      "source": "الصحفيين المحترفون يسعون لنقل الحقيقه بموضوعيه ومهنيه عاليه",
+      "target": "الصحفيون المحترفون يسعون لنقل الحقيقة بموضوعية ومهنية عالية",
+      "errors": ["number_agreement", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 56,
+      "source": "تسعى المراه العربيه الى تحقيق دراتها في مختلف المجالات العلميه والمهنيه",
+      "target": "تسعى المرأة العربية إلى تحقيق ذاتها في مختلف المجالات العلمية والمهنية",
+      "errors": ["hamza", "taa_marbuta", "hamza", "letter_confusion_د_ذ", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 57,
+      "source": "المسابقه الدوليه شارك فيها متسابقين من اكثر من خمسين دوله حول العالم",
+      "target": "المسابقة الدولية شارك فيها متسابقون من أكثر من خمسين دولة حول العالم",
+      "errors": ["taa_marbuta", "taa_marbuta", "number_agreement", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 58,
+      "source": "يحرص المعلم الناجح على تطوير مهاراته التدريسيه بشكل مستمر ودائم",
+      "target": "يحرص المعلم الناجح على تطوير مهاراته التدريسية بشكل مستمر ودائم",
+      "errors": ["taa_marbuta"]
+    },
+    {
+      "id": 59,
+      "source": "الكتب العلميه الحديثه توفر معلومات قيمه للباحثين والدارسين",
+      "target": "الكتب العلمية الحديثة توفر معلومات قيمة للباحثين والدارسين",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 60,
+      "source": "يركز الباحث فى دراسته على تحليل البيانات الاحصائيه المتعلقه بالموضوع",
+      "target": "يركز الباحث في دراسته على تحليل البيانات الإحصائية المتعلقة بالموضوع",
+      "errors": ["wrong_preposition", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 61,
+      "source": "النهضه العلميه في العالم العربى بداءت في القرن التاسع عشر الميلادى",
+      "target": "النهضة العلمية في العالم العربي بدأت في القرن التاسع عشر الميلادي",
+      "errors": ["taa_marbuta", "taa_marbuta", "alif_maqsura", "hamza", "alif_maqsura"]
+    },
+    {
+      "id": 62,
+      "source": "الدول النامية تحتاج مساعدات ماليه وتقنيه لتحقيق التنميه المستدامه",
+      "target": "الدول النامية تحتاج إلى مساعدات مالية وتقنية لتحقيق التنمية المستدامة",
+      "errors": ["missing_preposition", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 63,
+      "source": "شكر المدير الموظفات المجتهدين على عملهم الدؤوب طوال السنه الماضيه",
+      "target": "شكر المدير الموظفات المجتهدات على عملهن الدؤوب طوال السنة الماضية",
+      "errors": ["gender_agreement", "gender_agreement", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 64,
+      "source": "المشروع الصناعى الضخم يوفر فرص عمل لالاف العمال في المنطقه",
+      "target": "المشروع الصناعي الضخم يوفر فرص عمل لآلاف العمال في المنطقة",
+      "errors": ["alif_maqsura", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 65,
+      "source": "تهتم المجله الثقافيه بنشر الابحاث والدراسات المتعلقه بالادب والفن",
+      "target": "تهتم المجلة الثقافية بنشر الأبحاث والدراسات المتعلقة بالأدب والفن",
+      "errors": ["taa_marbuta", "taa_marbuta", "hamza", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 66,
+      "source": "الزائر الاجنبى ابدى اعجابه بالمعالم السياحيه والتاريخيه في البلد",
+      "target": "الزائر الأجنبي أبدى إعجابه بالمعالم السياحية والتاريخية في البلد",
+      "errors": ["hamza", "alif_maqsura", "hamza", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 67,
+      "source": "المحاسبات الخبراء يدققوا في السجلات الماليه للشركه بدقه متناهيه",
+      "target": "المحاسبات الخبيرات يدققن في السجلات المالية للشركة بدقة متناهية",
+      "errors": ["gender_agreement", "verb_conjugation", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 68,
+      "source": "يتطلب الامر صبرا ومثابره لتحقيق الاهداف المنشوده على المدى البعيد",
+      "target": "يتطلب الأمر صبرا ومثابرة لتحقيق الأهداف المنشودة على المدى البعيد",
+      "errors": ["hamza", "taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 69,
+      "source": "البرنامج التدريبى يستهدف تاهيل الخريجين الجدد لسوق العمل التنافسى",
+      "target": "البرنامج التدريبي يستهدف تأهيل الخريجين الجدد لسوق العمل التنافسي",
+      "errors": ["alif_maqsura", "hamza", "alif_maqsura"]
+    },
+    {
+      "id": 70,
+      "source": "يعتمد الصحفى على مصادر موثوقه للتحقق من صحه المعلومات قبل نشرها",
+      "target": "يعتمد الصحفي على مصادر موثوقة للتحقق من صحة المعلومات قبل نشرها",
+      "errors": ["alif_maqsura", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 71,
+      "source": "تعمل المنضمات الدوليه على توفير المساعدات الانسانيه للمتضررين من الكوارث",
+      "target": "تعمل المنظمات الدولية على توفير المساعدات الإنسانية للمتضررين من الكوارث",
+      "errors": ["letter_confusion_ض_ظ", "taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 72,
+      "source": "الفنان الموهوب عرض لوحاته في معرض فنى دولى حضره الالاف من الزوار",
+      "target": "الفنان الموهوب عرض لوحاته في معرض فني دولي حضره الآلاف من الزوار",
+      "errors": ["alif_maqsura", "alif_maqsura", "hamza"]
+    },
+    {
+      "id": 73,
+      "source": "ادت السياسات الاقتصاديه الجديده الى تحسن ملحوض في مؤشرات النمو",
+      "target": "أدت السياسات الاقتصادية الجديدة إلى تحسن ملحوظ في مؤشرات النمو",
+      "errors": ["hamza", "taa_marbuta", "taa_marbuta", "hamza", "letter_confusion_ض_ظ"]
+    },
+    {
+      "id": 74,
+      "source": "المدرسات الكفؤات يبدلوا جهودا كبيره لرفع مستوى الطالبات",
+      "target": "المدرسات الكفؤات يبذلن جهودا كبيرة لرفع مستوى الطالبات",
+      "errors": ["verb_conjugation", "letter_confusion_د_ذ", "taa_marbuta"]
+    },
+    {
+      "id": 75,
+      "source": "النقاش الثقافى يتناول قضايا مهمه تتعلق بالهويه العربيه المعاصره",
+      "target": "النقاش الثقافي يتناول قضايا مهمة تتعلق بالهوية العربية المعاصرة",
+      "errors": ["alif_maqsura", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 76,
+      "source": "تسعى المنشاه الى زياده ارباحها من خلال تحسين جوده المنتجات",
+      "target": "تسعى المنشأة إلى زيادة أرباحها من خلال تحسين جودة المنتجات",
+      "errors": ["hamza", "hamza", "taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 77,
+      "source": "المترجمين المحترفون يجيدوا عده لغات اجنبيه بطلاقه ومهاره",
+      "target": "المترجمون المحترفون يجيدون عدة لغات أجنبية بطلاقة ومهارة",
+      "errors": ["number_agreement", "verb_conjugation", "taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 78,
+      "source": "يحرص الاب على تعليم ابناءه قيم الصدق والامانه منذ الصغر",
+      "target": "يحرص الأب على تعليم أبنائه قيم الصدق والأمانة منذ الصغر",
+      "errors": ["hamza", "hamza", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 79,
+      "source": "الموسسه الخيريه تقدم خدمات صحيه وتعليميه مجانيه للمحتاجين",
+      "target": "المؤسسة الخيرية تقدم خدمات صحية وتعليمية مجانية للمحتاجين",
+      "errors": ["hamza", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 80,
+      "source": "استمع الطالب بالمحاضره الممتعه التى القاها الاستاد الزائر من الجامعه",
+      "target": "استمتع الطالب بالمحاضرة الممتعة التي ألقاها الأستاذ الزائر من الجامعة",
+      "errors": ["missing_preposition", "taa_marbuta", "taa_marbuta", "alif_maqsura", "hamza", "hamza", "letter_confusion_د_ذ", "taa_marbuta"]
+    },
+    {
+      "id": 81,
+      "source": "المؤتمر الدولى ناقش التحديات التى تواجه البيئه في القرن الحادى والعشرين",
+      "target": "المؤتمر الدولي ناقش التحديات التي تواجه البيئة في القرن الحادي والعشرين",
+      "errors": ["alif_maqsura", "alif_maqsura", "taa_marbuta", "alif_maqsura"]
+    },
+    {
+      "id": 82,
+      "source": "يسهم القطاع الخاص فى تحقيق التنميه الاقتصاديه والاجتماعيه في البلاد",
+      "target": "يسهم القطاع الخاص في تحقيق التنمية الاقتصادية والاجتماعية في البلاد",
+      "errors": ["wrong_preposition", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 83,
+      "source": "تعمل الممرضات المتفانيين على تقديم افضل رعايه صحيه للمرضى",
+      "target": "تعمل الممرضات المتفانيات على تقديم أفضل رعاية صحية للمرضى",
+      "errors": ["gender_agreement", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 84,
+      "source": "يتطلب النجاح فى الحياه المهنيه العمل الجاد والتخطيط السليم",
+      "target": "يتطلب النجاح في الحياة المهنية العمل الجاد والتخطيط السليم",
+      "errors": ["wrong_preposition", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 85,
+      "source": "الرياضه المنتضمه تحسن الصحه الجسديه والنفسيه للانسان بشكل ملحوظ",
+      "target": "الرياضة المنتظمة تحسن الصحة الجسدية والنفسية للإنسان بشكل ملحوظ",
+      "errors": ["taa_marbuta", "letter_confusion_ض_ظ", "taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 86,
+      "source": "الشركه الناشئه حققت نموا ملحوضا في مبيعاتها خلال السنه الاولى",
+      "target": "الشركة الناشئة حققت نموا ملحوظا في مبيعاتها خلال السنة الأولى",
+      "errors": ["taa_marbuta", "taa_marbuta", "letter_confusion_ض_ظ", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 87,
+      "source": "يتمتع الطالب المجتهد بثقه عاليه بنفسه ويسعى لتحقيق اعلى الدرجات",
+      "target": "يتمتع الطالب المجتهد بثقة عالية بنفسه ويسعى لتحقيق أعلى الدرجات",
+      "errors": ["taa_marbuta", "taa_marbuta", "hamza"]
+    },
+    {
+      "id": 88,
+      "source": "المنتدى الاقتصادى العالمى يجمع قاده الاعمال من جميع انحاء العالم",
+      "target": "المنتدى الاقتصادي العالمي يجمع قادة الأعمال من جميع أنحاء العالم",
+      "errors": ["alif_maqsura", "alif_maqsura", "taa_marbuta", "hamza", "hamza"]
+    },
+    {
+      "id": 89,
+      "source": "الطبيبه المتخصصه نصحت المريض بضروره الراحه واتباع نضام غدائى صحى",
+      "target": "الطبيبة المتخصصة نصحت المريض بضرورة الراحة واتباع نظام غذائي صحي",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "letter_confusion_ض_ظ", "letter_confusion_د_ذ", "alif_maqsura", "alif_maqsura"]
+    },
+    {
+      "id": 90,
+      "source": "المكتبه الوطنيه تحتوى على الاف الكتب والمخطوطات النادره والقيمه",
+      "target": "المكتبة الوطنية تحتوي على آلاف الكتب والمخطوطات النادرة والقيمة",
+      "errors": ["taa_marbuta", "taa_marbuta", "alif_maqsura", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 91,
+      "source": "يتفاوض الوفد مع الجانب الاخر للوصول الى اتفاق يرضى جميع الاطراف",
+      "target": "يتفاوض الوفد مع الجانب الآخر للوصول إلى اتفاق يرضي جميع الأطراف",
+      "errors": ["hamza", "hamza", "alif_maqsura", "hamza"]
+    },
+    {
+      "id": 92,
+      "source": "المهندسين الشباب يقدموا حلولا مبتكره لمشاكل الطاقه المتجدده",
+      "target": "المهندسون الشباب يقدمون حلولا مبتكرة لمشاكل الطاقة المتجددة",
+      "errors": ["number_agreement", "verb_conjugation", "taa_marbuta", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 93,
+      "source": "تتميز المدينه القديمه بعماره فريده تعكس تاريخها العريق والغنى",
+      "target": "تتميز المدينة القديمة بعمارة فريدة تعكس تاريخها العريق والغني",
+      "errors": ["taa_marbuta", "taa_marbuta", "taa_marbuta", "taa_marbuta", "alif_maqsura"]
+    },
+    {
+      "id": 94,
+      "source": "يسعى الصناعيون الى تقليل الانبعاثات الكربونيه للحفاض على البيئه",
+      "target": "يسعى الصناعيون إلى تقليل الانبعاثات الكربونية للحفاظ على البيئة",
+      "errors": ["hamza", "taa_marbuta", "letter_confusion_ض_ظ", "taa_marbuta"]
+    },
+    {
+      "id": 95,
+      "source": "المفاوضات الدوليه استمرت ايام طويله للوصول لاتفاق شامل ومرضى",
+      "target": "المفاوضات الدولية استمرت أياما طويلة للوصول لاتفاق شامل ومرضي",
+      "errors": ["taa_marbuta", "hamza", "definiteness", "taa_marbuta", "alif_maqsura"]
+    },
+    {
+      "id": 96,
+      "source": "يحرص المحامى على الدفاع بقوه عن حقوق موكله امام المحكمه",
+      "target": "يحرص المحامي على الدفاع بقوة عن حقوق موكله أمام المحكمة",
+      "errors": ["alif_maqsura", "taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 97,
+      "source": "الباحثات الجادون يعملوا بجد لانجاز ابحاثهن في الوقت المحدد",
+      "target": "الباحثات الجادات يعملن بجد لإنجاز أبحاثهن في الوقت المحدد",
+      "errors": ["gender_agreement", "verb_conjugation", "hamza", "hamza"]
+    },
+    {
+      "id": 98,
+      "source": "الوزاره اعلنت عن فتح باب التقديم للوظائف الحكوميه الشاغره",
+      "target": "الوزارة أعلنت عن فتح باب التقديم للوظائف الحكومية الشاغرة",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta", "taa_marbuta"]
+    },
+    {
+      "id": 99,
+      "source": "يستفيد الطلاب من المنصات التعليميه الالكترونيه في دراستهم عن بعد",
+      "target": "يستفيد الطلاب من المنصات التعليمية الإلكترونية في دراستهم عن بعد",
+      "errors": ["taa_marbuta", "hamza", "taa_marbuta"]
+    },
+    {
+      "id": 100,
+      "source": "نحرص على المشاركه الفعاله فى الانشطه الثقافيه والاجتماعيه في المجتمع",
+      "target": "نحرص على المشاركة الفعالة في الأنشطة الثقافية والاجتماعية في المجتمع",
+      "errors": ["taa_marbuta", "taa_marbuta", "wrong_preposition", "hamza", "taa_marbuta", "taa_marbuta"]
+    }
+  ]
+}
